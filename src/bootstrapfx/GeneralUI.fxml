@@ -42,9 +42,81 @@
                                     <JFXButton fx:id="comp_btn_views" layoutY="105.0" onAction="#navigationControl" styleClass="ctrl-btn" text="Views" />
                                  </children>
                               </Group>
-                              <AnchorPane fx:id="comp_pane_fields" layoutX="210.0" layoutY="30.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="20.0" />
-                              <AnchorPane fx:id="comp_pane_views" layoutX="220.0" layoutY="40.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="20.0" />
-                              <AnchorPane fx:id="comp_pane_buttons" layoutX="210.0" layoutY="30.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="20.0">
+                              <Separator layoutX="190.0" layoutY="26.0" orientation="VERTICAL" prefHeight="200.0" AnchorPane.bottomAnchor="25.0" AnchorPane.topAnchor="25.0" />
+                              <AnchorPane fx:id="comp_pane_fields" layoutX="210.0" layoutY="30.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="10.0" />
+                              <AnchorPane fx:id="comp_pane_views" layoutX="220.0" layoutY="40.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="10.0" />
+                              <AnchorPane fx:id="comp_pane_labels" layoutX="238.0" layoutY="103.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="10.0">
+                                 <children>
+                                    <Label text="Headings" AnchorPane.topAnchor="0.0">
+                                       <styleClass>
+                                          <String fx:value="h4" />
+                                          <String fx:value="lead" />
+                                       </styleClass>
+                                    </Label>
+                                    <Separator layoutY="31.0" prefWidth="130.0" AnchorPane.topAnchor="30.0" />
+                                    <Label layoutY="38.0" styleClass="h1" text="Heading 1" AnchorPane.topAnchor="38.0" />
+                                    <Label layoutX="1.0" layoutY="74.0" styleClass="h2" text="Heading 2" />
+                                    <Label layoutY="107.0" styleClass="h3" text="Heading 3" AnchorPane.leftAnchor="0.0" />
+                                    <Label layoutY="140.0" styleClass="h4" text="Heading 4" AnchorPane.leftAnchor="0.0" />
+                                    <Label layoutY="174.0" styleClass="h5" text="Heading 5" AnchorPane.leftAnchor="0.0" />
+                                    <Label layoutY="207.0" styleClass="h6" text="Heading 6" AnchorPane.leftAnchor="0.0" />
+                                    <Label layoutX="151.0" text="Contextual Text Colors" AnchorPane.leftAnchor="200.0" AnchorPane.topAnchor="0.0">
+                                       <styleClass>
+                                          <String fx:value="h4" />
+                                          <String fx:value="lead" />
+                                       </styleClass>
+                                    </Label>
+                                    <Separator layoutX="151.0" layoutY="29.0" prefWidth="200.0" AnchorPane.leftAnchor="200.0" AnchorPane.topAnchor="30.0" />
+                                    <Label layoutX="200.0" layoutY="42.0" text="Default" AnchorPane.leftAnchor="200.0" AnchorPane.topAnchor="42.0" />
+                                    <Label layoutX="200.0" layoutY="67.0" styleClass="label-primary" text="label-primary" AnchorPane.leftAnchor="200.0" AnchorPane.topAnchor="67.0" />
+                                    <Label layoutX="201.0" layoutY="90.0" styleClass="label-secondary" text="label-secondary" AnchorPane.leftAnchor="200.0" AnchorPane.topAnchor="92.0" />
+                                    <Label layoutX="201.0" layoutY="115.0" styleClass="label-success" text="label-success" AnchorPane.leftAnchor="200.0" AnchorPane.topAnchor="117.0" />
+                                    <Label layoutX="210.0" layoutY="52.0" styleClass="label-warning" text="label-warning" AnchorPane.leftAnchor="200.0" AnchorPane.topAnchor="142.0" />
+                                    <Label layoutX="210.0" layoutY="77.0" styleClass="label-danger" text="label-danger" AnchorPane.leftAnchor="200.0" AnchorPane.topAnchor="167.0" />
+                                    <Label layoutX="210.0" layoutY="102.0" styleClass="label-info" text="label-info" AnchorPane.leftAnchor="200.0" AnchorPane.topAnchor="192.0" />
+                                    <Label layoutX="210.0" layoutY="127.0" styleClass="label-purple" text="label-purple" AnchorPane.leftAnchor="200.0" AnchorPane.topAnchor="217.0" />
+                                    <Label layoutX="200.0" layoutY="241.0" styleClass="label-pink" text="label-pink" />
+                                    <Label layoutX="200.0" layoutY="266.0" styleClass="label-inverse" text="label-inverse" />
+                                    <Label layoutX="210.0" layoutY="10.0" text="Font Variants" AnchorPane.leftAnchor="450.0" AnchorPane.topAnchor="0.0">
+                                       <styleClass>
+                                          <String fx:value="h4" />
+                                          <String fx:value="lead" />
+                                       </styleClass>
+                                    </Label>
+                                    <Separator layoutX="210.0" layoutY="40.0" prefWidth="200.0" AnchorPane.leftAnchor="450.0" AnchorPane.topAnchor="30.0" />
+                                    <Label layoutX="439.0" layoutY="53.0" text="bold" AnchorPane.leftAnchor="450.0" AnchorPane.topAnchor="40.0">
+                                       <styleClass>
+                                          <String fx:value="h3" />
+                                          <String fx:value="bold" />
+                                       </styleClass>
+                                    </Label>
+                                    <Label layoutX="450.0" layoutY="78.0" text="semibold">
+                                       <styleClass>
+                                          <String fx:value="h3" />
+                                          <String fx:value="semibold" />
+                                       </styleClass>
+                                    </Label>
+                                    <Label layoutX="450.0" layoutY="113.0" styleClass="h3" text="regular" />
+                                    <Label layoutX="450.0" layoutY="151.0" text="light">
+                                       <styleClass>
+                                          <String fx:value="h3" />
+                                          <String fx:value="light" />
+                                       </styleClass>
+                                    </Label>
+                                    <Label layoutX="450.0" layoutY="190.0" text="lead">
+                                       <styleClass>
+                                          <String fx:value="h3" />
+                                          <String fx:value="lead" />
+                                       </styleClass>
+                                    </Label>
+                                    <Label layoutX="450.0" layoutY="228.0" text="underlined">
+                                       <styleClass>
+                                          <String fx:value="h3" />
+                                          <String fx:value="underlined" />
+                                       </styleClass>
+                                    </Label>
+                                 </children></AnchorPane>
+                              <AnchorPane fx:id="comp_pane_buttons" layoutX="210.0" layoutY="30.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="10.0">
                                  <children>
                                     <Label layoutX="76.0" text="JavaFX Buttons" AnchorPane.topAnchor="0.0">
                                        <styleClass>
@@ -314,77 +386,6 @@
                                     </Label>
                                  </children>
                               </AnchorPane>
-                              <AnchorPane fx:id="comp_pane_labels" layoutX="238.0" layoutY="103.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="20.0">
-                                 <children>
-                                    <Label text="Headings" AnchorPane.topAnchor="0.0">
-                                       <styleClass>
-                                          <String fx:value="h4" />
-                                          <String fx:value="lead" />
-                                       </styleClass>
-                                    </Label>
-                                    <Separator layoutY="31.0" prefWidth="130.0" AnchorPane.topAnchor="30.0" />
-                                    <Label layoutY="38.0" styleClass="h1" text="Heading 1" AnchorPane.topAnchor="38.0" />
-                                    <Label layoutX="1.0" layoutY="74.0" styleClass="h2" text="Heading 2" />
-                                    <Label layoutY="107.0" styleClass="h3" text="Heading 3" AnchorPane.leftAnchor="0.0" />
-                                    <Label layoutY="140.0" styleClass="h4" text="Heading 4" AnchorPane.leftAnchor="0.0" />
-                                    <Label layoutY="174.0" styleClass="h5" text="Heading 5" AnchorPane.leftAnchor="0.0" />
-                                    <Label layoutY="207.0" styleClass="h6" text="Heading 6" AnchorPane.leftAnchor="0.0" />
-                                    <Label layoutX="151.0" text="Contextual Text Colors" AnchorPane.leftAnchor="200.0" AnchorPane.topAnchor="0.0">
-                                       <styleClass>
-                                          <String fx:value="h4" />
-                                          <String fx:value="lead" />
-                                       </styleClass>
-                                    </Label>
-                                    <Separator layoutX="151.0" layoutY="29.0" prefWidth="200.0" AnchorPane.leftAnchor="200.0" AnchorPane.topAnchor="30.0" />
-                                    <Label layoutX="200.0" layoutY="42.0" text="Default" AnchorPane.leftAnchor="200.0" AnchorPane.topAnchor="42.0" />
-                                    <Label layoutX="200.0" layoutY="67.0" styleClass="label-primary" text="label-primary" AnchorPane.leftAnchor="200.0" AnchorPane.topAnchor="67.0" />
-                                    <Label layoutX="201.0" layoutY="90.0" styleClass="label-secondary" text="label-secondary" AnchorPane.leftAnchor="200.0" AnchorPane.topAnchor="92.0" />
-                                    <Label layoutX="201.0" layoutY="115.0" styleClass="label-success" text="label-success" AnchorPane.leftAnchor="200.0" AnchorPane.topAnchor="117.0" />
-                                    <Label layoutX="210.0" layoutY="52.0" styleClass="label-warning" text="label-warning" AnchorPane.leftAnchor="200.0" AnchorPane.topAnchor="142.0" />
-                                    <Label layoutX="210.0" layoutY="77.0" styleClass="label-danger" text="label-danger" AnchorPane.leftAnchor="200.0" AnchorPane.topAnchor="167.0" />
-                                    <Label layoutX="210.0" layoutY="102.0" styleClass="label-info" text="label-info" AnchorPane.leftAnchor="200.0" AnchorPane.topAnchor="192.0" />
-                                    <Label layoutX="210.0" layoutY="127.0" styleClass="label-purple" text="label-purple" AnchorPane.leftAnchor="200.0" AnchorPane.topAnchor="217.0" />
-                                    <Label layoutX="200.0" layoutY="241.0" styleClass="label-pink" text="label-pink" />
-                                    <Label layoutX="200.0" layoutY="266.0" styleClass="label-inverse" text="label-inverse" />
-                                    <Label layoutX="210.0" layoutY="10.0" text="Font Variants" AnchorPane.leftAnchor="450.0" AnchorPane.topAnchor="0.0">
-                                       <styleClass>
-                                          <String fx:value="h4" />
-                                          <String fx:value="lead" />
-                                       </styleClass>
-                                    </Label>
-                                    <Separator layoutX="210.0" layoutY="40.0" prefWidth="200.0" AnchorPane.leftAnchor="450.0" AnchorPane.topAnchor="30.0" />
-                                    <Label layoutX="439.0" layoutY="53.0" text="bold" AnchorPane.leftAnchor="450.0" AnchorPane.topAnchor="40.0">
-                                       <styleClass>
-                                          <String fx:value="h3" />
-                                          <String fx:value="bold" />
-                                       </styleClass>
-                                    </Label>
-                                    <Label layoutX="450.0" layoutY="78.0" text="semibold">
-                                       <styleClass>
-                                          <String fx:value="h3" />
-                                          <String fx:value="semibold" />
-                                       </styleClass>
-                                    </Label>
-                                    <Label layoutX="450.0" layoutY="113.0" styleClass="h3" text="regular" />
-                                    <Label layoutX="450.0" layoutY="151.0" text="light">
-                                       <styleClass>
-                                          <String fx:value="h3" />
-                                          <String fx:value="light" />
-                                       </styleClass>
-                                    </Label>
-                                    <Label layoutX="450.0" layoutY="190.0" text="lead">
-                                       <styleClass>
-                                          <String fx:value="h3" />
-                                          <String fx:value="lead" />
-                                       </styleClass>
-                                    </Label>
-                                    <Label layoutX="450.0" layoutY="228.0" text="underlined">
-                                       <styleClass>
-                                          <String fx:value="h3" />
-                                          <String fx:value="underlined" />
-                                       </styleClass>
-                                    </Label>
-                                 </children></AnchorPane>
                            </children>
                         </AnchorPane>
                     </content>
