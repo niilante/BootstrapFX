@@ -1,0 +1,101 @@
+/* 
+    Author     : BENJAH
+*/
+
+#main_pane{
+    -fx-background-color: #FFFFFF;
+}
+
+.main_pane_header{}
+
+.main_pane_header .label{
+    -fx-font-size: 40px;
+}
+
+#sign_out{
+    -fx-graphic:  url('../img/Sign_Out_25px.png');
+}
+
+#sign_out:hover, #sign_out:pressed{
+    -fx-graphic:  url('../img/Sign_Out_Hover_25px.png');
+}
+
+#min_window{
+    -fx-graphic: url('../img/Window_Minimize_25px.png');
+}
+
+#clz_window{
+    -fx-graphic: url('../img/Window_Close_25px.png');
+}
+
+#sign_out, #min_window, #clz_window{
+    -fx-cursor: DEFAULT;
+}
+
+#sign_out:hover, #min_window:hover{
+    -fx-background-color: #455A64;
+}
+
+#clz_window:hover{
+    -fx-background-color: #F44336;
+}
+
+.jfx-tab-pane .tab-header-background{
+    -fx-background-color: transparent;
+}
+
+.jfx-tab-pane .tab{
+    -fx-pref-width: 115;
+}
+
+.jfx-tab-pane .tab .tab-label{
+    -fx-font-family: 'Segoe UI Semibold';
+    -fx-font-size: 16;
+    -fx-text-fill: #CFD8DC;
+}
+
+.jfx-tab-pane .tab:selected .tab-label{
+    -fx-text-fill: #FFFFFF;
+}
+
+.jfx-tab-pane .tab-selected-line{
+    -fx-background-color: #F5F5F5;
+}
+
+.jfx-tab-pane .tab-header-area .jfx-rippler{
+    -jfx-rippler-fill: #FFFFFF;
+}
+
+.ctrl-btn{
+    -fx-alignment: CENTER_LEFT;
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-border-width: 0 0 0 3;
+    -fx-font-size: 13;
+    -fx-pref-width: 150;
+}
+
+.ctrl-btn:hover{
+    -fx-background-color: #ECEFF1;
+    -fx-border-color: transparent;
+}
+
+.ctrl-selected, .ctrl-selected:hover{
+    -fx-background-color: #ECEFF1;
+    -fx-border-color: transparent transparent transparent #546E7A;
+    -fx-text-fill: #263238;
+}
+
+.ctrl-btn:pressed{
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0), 0,0,0,0);
+}
+
+.main_pane_footer{}
+
+.main_pane_header .label, .main_pane_footer .label{
+    -fx-text-fill: #FFFFFF;
+}
+
+.main_pane_header, .main_pane_footer{
+    -fx-background-color: #263238;
+}

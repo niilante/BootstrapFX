@@ -1,0 +1,23 @@
+/* 
+    Author     : BENJAH
+*/
+
+#comp_btn_labels{
+    -fx-graphic:  url('../img/Label_17px.png');
+}
+
+#comp_btn_buttons{
+    -fx-graphic:  url('../img/Buttons_17px.png');
+}
+
+#comp_btn_fields{
+    -fx-graphic:  url('../img/Fields_17px.png');
+}
+
+#comp_btn_views{
+    -fx-graphic:  url('../img/Views_17px.png');
+}
+
+#comp_pane_labels, #comp_pane_buttons, #comp_btn_fields, #comp_pane_views{
+    -fx-background-color:  #FFFFFF;
+}

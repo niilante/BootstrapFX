@@ -1,0 +1,385 @@
+/* 
+                BootstrapFX Version 1.0 Beta
+    A customized CSS for JavaFX - Inspired by Bootstrap
+    ---------------------------------------------------
+              Wasula Benjamin, Copyright(c) 2018
+               mailto: wasulabenjamin@gmail.com
+    ---------------------------------------------------
+    General Styles
+       - Fonts
+       - Alignment
+       - Root
+    1. Typography (Labels)
+       - Headings
+       - Contextual Colors
+       - Font Styles
+    2. Buttons
+       - Normal Buttons
+       - Outlined Buttons
+       - Contextual Colors
+       - Graphic Buttons
+
+       - Sizes
+       - RadioButton
+       - ToggleButton
+       - CheckBox
+       - ChoiceBox
+    3. Fields
+       - Text Field
+       - PasswordField
+       - TextArea
+       - Contextual Colors
+    4. Scroll
+       - ScrollBar
+       - ScrollPane
+       * TextArea ScrollBar
+    5. Views
+       - ListView
+       - TableView
+    6. ComboBox
+
+    Separator
+    
+    Separator
+    Slider
+    Progress Bar and Progress Indicator
+    Hyperlink
+    HTML Editor
+    Tooltip
+    Titled Pane and Accordion
+    Menu
+    Color Picker
+    Date Picker
+    Pagination Control
+    File Chooser
+    Customization of UI Controls
+    UI Controls on the Embedded Platforms
+    Pie Chart
+    Line Chart
+    Area Chart
+    Bubble Chart
+    Scatter Chart
+    Bar Chart
+    
+    Utilities
+    - Borders
+      * Colors
+      * Additive
+      * Subtractive
+    Modals
+    ImageView
+*/
+
+/******************************* General Styles *******************************/
+@font-face{
+    font-family: 'Segoe UI Bold';
+    src: url('../fonts/SegoeUI-Bold.ttf');
+}
+
+@font-face{
+    font-family: 'Segoe UI Semibold';
+    src: url('../fonts/SegoeUI-Semibold.ttf');
+}
+
+@font-face{
+    font-family: 'Segoe UI';
+    src: url('../fonts/SegoeUI-Regular.ttf');
+}
+
+@font-face{
+    font-family: 'Segoe UI Light';
+    src: url('../fonts/SegoeUI-Light.ttf');
+}
+
+*{
+    -fx-text-alignment: justify;
+}
+
+.root{
+    -fx-background-color: #FFFFFF;
+    -fx-font-family: 'Segoe UI';
+}
+
+
+/*************************** 1. Typography(Labels) ****************************/
+.label{
+    -fx-text-fill: #455A64;
+}
+
+.h1{
+    -fx-font-size: 26;
+}
+
+.h2{
+    -fx-font-size: 24;
+}
+
+.h3{
+    -fx-font-size: 22;
+}
+
+.h4{
+    -fx-font-size: 20;
+}
+
+.h5{
+    -fx-font-size: 18;
+}
+
+.h6{
+    -fx-font-size: 16;
+}
+
+.bold{
+    -fx-font-family: 'Segoe UI Bold';
+}
+
+.lead{
+    -fx-text-fill: #78909C;
+}
+
+.semibold{
+    -fx-font-family: 'Segoe UI Semibold';
+}
+
+.light{
+    -fx-font-family: 'Segoe UI Light';
+}
+
+.underlined{
+    -fx-underline: true;
+}
+
+.label{
+    -fx-wrap-text: true;
+}
+
+.label-primary{
+    -fx-text-fill: #3f51b5;
+}
+
+.label-secondary{
+    -fx-text-fill: #6c757d;
+}
+
+.label-success{
+    -fx-text-fill: #4CAF50;
+}
+
+.label-warning{
+    -fx-text-fill: #ebc142;
+}
+
+.label-danger{
+    -fx-text-fill: #F44336;
+}
+
+.label-info{
+    -fx-text-fill: #03a9f4;
+}
+
+.label-purple{
+    -fx-text-fill: #ad86df;
+}
+
+.label-pink{
+    -fx-text-fill: #f13c6e;
+}
+
+.label-inverse{
+    -fx-text-fill: #212121;
+}
+
+
+/********************************* 2. Buttons *********************************/
+.button{
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 0;
+    -fx-border-color: #90A4AE;
+    -fx-font-family: 'Segoe UI Semibold';
+    -fx-cursor: hand;
+    -fx-graphic-text-gap: 15;
+    -fx-text-fill: #455A64;
+}
+
+.button:hover{
+    -fx-border-color: #607D8B;
+    -fx-text-fill: #263238;
+}
+
+.btn-outline-primary{
+    -fx-border-color: #3f51b5;
+    -fx-text-fill: #3f51b5;
+}
+
+.btn-outline-secondary{
+    -fx-border-color: #6c757d;
+    -fx-text-fill: #6c757d;
+}
+
+.btn-outline-success{
+    -fx-border-color: #4CAF50;
+    -fx-text-fill: #4CAF50;
+}
+
+.btn-outline-warning{
+    -fx-border-color: #ebc142;
+    -fx-text-fill: #ebc142;
+}
+
+.btn-outline-danger{
+    -fx-border-color: #F44336;
+    -fx-text-fill: #F44336;
+}
+
+.btn-outline-info{
+    -fx-border-color: #03a9f4;
+    -fx-text-fill: #03a9f4;
+}
+
+.btn-outline-purple{
+    -fx-border-color: #ad86df;
+    -fx-text-fill: #ad86df;
+}
+
+.btn-outline-pink{
+    -fx-border-color: #f13c6e;
+    -fx-text-fill: #f13c6e;
+}
+
+.btn-outline-inverse{
+    -fx-border-color: #424242;
+    -fx-text-fill: #424242;
+}
+
+.btn-primary, .btn-outline-primary:hover{
+    -fx-background-color: #3f51b5;
+}
+
+.btn-secondary, .btn-outline-secondary:hover{
+    -fx-background-color: #6c757d;
+}
+
+.btn-success, .btn-outline-success:hover{
+    -fx-background-color: #4CAF50;
+}
+
+.btn-warning, .btn-outline-warning:hover{
+    -fx-background-color: #ebc142;
+}
+
+.btn-danger, .btn-outline-danger:hover{
+    -fx-background-color: #F44336;
+}
+
+.btn-info, .btn-outline-info:hover{
+    -fx-background-color: #03a9f4;
+}
+
+.btn-purple, .btn-outline-purple:hover{
+    -fx-background-color: #ad86df;
+}
+
+.btn-pink, .btn-outline-pink:hover{
+    -fx-background-color: #f13c6e;
+}
+
+.btn-inverse, .btn-outline-inverse:hover{
+    -fx-background-color: #424242;
+}
+
+.btn-primary:hover{
+    -fx-background-color: #01579B;
+}
+
+.btn-secondary:hover{
+    -fx-background-color: #616161;
+}
+
+.btn-success:hover{
+    -fx-background-color: #00C853;
+}
+
+.btn-warning:hover{
+    -fx-background-color: #F9A825;
+}
+
+.btn-danger:hover{
+    -fx-background-color: #E53935;
+}
+
+.btn-info:hover{
+    -fx-background-color: #1E88E5;
+}
+
+.btn-purple:hover{
+    -fx-background-color: #AB47BC;
+}
+
+.btn-pink:hover{
+    -fx-background-color: #E91E63;
+}
+
+.btn-inverse:hover{
+    -fx-background-color: #263238;
+}
+
+.btn-primary, .btn-primary:hover, .btn-outline-primary:hover,
+.btn-secondary, .btn-secondary:hover, .btn-outline-secondary:hover,
+.btn-success, .btn-success:hover, .btn-outline-success:hover,
+.btn-warning, .btn-warning:hover, .btn-outline-warning:hover,
+.btn-danger, .btn-danger:hover, .btn-outline-danger:hover,
+.btn-info, .btn-info:hover, .btn-outline-info:hover,
+.btn-purple, .btn-purple:hover, .btn-outline-purple:hover,
+.btn-pink, .btn-pink:hover, .btn-outline-pink:hover,
+.btn-inverse, .btn-inverse:hover, .btn-outline-inverse:hover{
+    -fx-border-color: transparent;
+    -fx-text-fill: #FAFAFA;
+}
+
+.button .jfx-rippler{
+    -jfx-rippler-fill: #9E9E9E;
+}
+
+.btn-primary .jfx-rippler, .btn-outline-primary .jfx-rippler,
+.btn-secondary .jfx-rippler, .btn-outline-secondary .jfx-rippler,
+.btn-success .jfx-rippler, .btn-outline-success .jfx-rippler,
+.btn-warning .jfx-rippler, .btn-outline-warning .jfx-rippler,
+.btn-danger .jfx-rippler, .btn-outline-danger .jfx-rippler,
+.btn-info .jfx-rippler, .btn-outline-info .jfx-rippler,
+.btn-purple .jfx-rippler, .btn-outline-purple .jfx-rippler,
+.btn-pink .jfx-rippler, .btn-outline-pink .jfx-rippler,
+.btn-inverse .jfx-rippler, .btn-outline-inverse .jfx-rippler{
+    -jfx-rippler-fill: #FAFAFA;
+}
+
+.button:pressed{
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 6,0.5,0.5,0.5);
+}
+
+.btn-graphic, .btn-graphic:hover{
+    -fx-background-color: TRANSPARENT;
+    -fx-border-color: TRANSPARENT;
+    -fx-content-display: graphic-only;
+    -fx-graphic-text-gap: 0;
+}
+
+.btn-xl{
+    -fx-pref-width: 140px;
+}
+
+.btn-lg{
+    -fx-pref-width: 120px;
+}
+
+.btn-md{
+    -fx-pref-width: 100px;
+}
+
+.btn-sm{
+    -fx-pref-width: 80px;
+}
+
+.btn-xs{
+    -fx-pref-width: 60px;
+}
