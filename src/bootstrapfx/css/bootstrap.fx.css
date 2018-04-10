@@ -18,10 +18,11 @@
        - Outlined Buttons
        - Contextual Colors
        - Graphic Buttons
-
        - Sizes
-       - RadioButton
        - ToggleButton
+
+********************************************************************************
+       - RadioButton
        - CheckBox
        - ChoiceBox
     3. Fields
@@ -36,31 +37,30 @@
     5. Views
        - ListView
        - TableView
-    6. ComboBox
+       - TreeView.
+       - TreeTable View.
+    ComboBox
+    Separator
+    Slider.
+    Progress Bar and Progress Indicator.
+    Hyperlink.
+    HTML Editor.
+    Tooltip.
+    Titled Pane and Accordion.
+    Menu.
+    Color Picker.
+    Date Picker.
+    Pagination Control.
+    File Chooser.
+    Customization of UI Controls.
+    UI Controls on the Embedded Platforms.
+    Pie Chart.
+    Line Chart.
+    Area Chart.
+    Bubble Chart.
+    Scatter Chart.
+    Bar Chart.
 
-    Separator
-    
-    Separator
-    Slider
-    Progress Bar and Progress Indicator
-    Hyperlink
-    HTML Editor
-    Tooltip
-    Titled Pane and Accordion
-    Menu
-    Color Picker
-    Date Picker
-    Pagination Control
-    File Chooser
-    Customization of UI Controls
-    UI Controls on the Embedded Platforms
-    Pie Chart
-    Line Chart
-    Area Chart
-    Bubble Chart
-    Scatter Chart
-    Bar Chart
-    
     Utilities
     - Borders
       * Colors
@@ -77,8 +77,18 @@
 }
 
 @font-face{
+    font-family: 'Segoe UI Bold Italic';
+    src: url('../fonts/SegoeUI-Bold-Italic.ttf');
+}
+
+@font-face{
     font-family: 'Segoe UI Semibold';
     src: url('../fonts/SegoeUI-Semibold.ttf');
+}
+
+@font-face{
+    font-family: 'Segoe UI Semibold Italic';
+    src: url('../fonts/SegoeUI-Semibold-Italic.ttf');
 }
 
 @font-face{
@@ -87,8 +97,18 @@
 }
 
 @font-face{
+    font-family: 'Segoe UI Italic';
+    src: url('../fonts/SegoeUI-Regular-Italic.ttf');
+}
+
+@font-face{
     font-family: 'Segoe UI Light';
     src: url('../fonts/SegoeUI-Light.ttf');
+}
+
+@font-face{
+    font-family: 'Segoe UI Light Italic';
+    src: url('../fonts/SegoeUI-Light-Italic.ttf');
 }
 
 *{
@@ -134,16 +154,32 @@
     -fx-font-family: 'Segoe UI Bold';
 }
 
-.lead{
-    -fx-text-fill: #78909C;
+.bold.italic{
+    -fx-font-family: 'Segoe UI Bold Italic';
 }
 
 .semibold{
     -fx-font-family: 'Segoe UI Semibold';
 }
 
+.semibold.italic{
+    -fx-font-family: 'Segoe UI Semibold Italic';
+}
+
 .light{
     -fx-font-family: 'Segoe UI Light';
+}
+
+.light.italic{
+    -fx-font-family: 'Segoe UI Light Italic';
+}
+
+.lead{
+    -fx-text-fill: #78909C;
+}
+
+.italic{
+    -fx-font-family: 'Segoe UI Italic';
 }
 
 .underlined{
@@ -192,7 +228,7 @@
 
 
 /********************************* 2. Buttons *********************************/
-.button{
+.button, .toggle-button{
     -fx-background-color: #FFFFFF;
     -fx-background-radius: 0;
     -fx-border-color: #90A4AE;
@@ -207,84 +243,92 @@
     -fx-text-fill: #263238;
 }
 
-.btn-outline-primary{
+.toggle-button:hover{
+    -fx-background-color: #FAFAFA;
+}
+
+.toggle-button:selected{
+    -fx-background-color: #BDBDBD;
+}
+
+.btn-outline-primary, .toggle-primary{
     -fx-border-color: #3f51b5;
     -fx-text-fill: #3f51b5;
 }
 
-.btn-outline-secondary{
+.btn-outline-secondary, .toggle-secondary{
     -fx-border-color: #6c757d;
     -fx-text-fill: #6c757d;
 }
 
-.btn-outline-success{
+.btn-outline-success, .toggle-success{
     -fx-border-color: #4CAF50;
     -fx-text-fill: #4CAF50;
 }
 
-.btn-outline-warning{
+.btn-outline-warning, .toggle-warning{
     -fx-border-color: #ebc142;
     -fx-text-fill: #ebc142;
 }
 
-.btn-outline-danger{
+.btn-outline-danger, .toggle-danger{
     -fx-border-color: #F44336;
     -fx-text-fill: #F44336;
 }
 
-.btn-outline-info{
+.btn-outline-info, .toggle-info{
     -fx-border-color: #03a9f4;
     -fx-text-fill: #03a9f4;
 }
 
-.btn-outline-purple{
+.btn-outline-purple, .toggle-purple{
     -fx-border-color: #ad86df;
     -fx-text-fill: #ad86df;
 }
 
-.btn-outline-pink{
+.btn-outline-pink, .toggle-pink{
     -fx-border-color: #f13c6e;
     -fx-text-fill: #f13c6e;
 }
 
-.btn-outline-inverse{
+.btn-outline-inverse, .toggle-inverse{
     -fx-border-color: #424242;
     -fx-text-fill: #424242;
 }
 
-.btn-primary, .btn-outline-primary:hover{
+.btn-primary, .btn-outline-primary:hover, .toggle-primary:selected{
     -fx-background-color: #3f51b5;
 }
 
-.btn-secondary, .btn-outline-secondary:hover{
+.btn-secondary, .btn-outline-secondary:hover, .toggle-secondary:selected{
     -fx-background-color: #6c757d;
 }
 
-.btn-success, .btn-outline-success:hover{
+.btn-success, .btn-outline-success:hover, .toggle-success:selected{
     -fx-background-color: #4CAF50;
 }
 
-.btn-warning, .btn-outline-warning:hover{
+.btn-warning, .btn-outline-warning:hover, .toggle-warning:selected{
     -fx-background-color: #ebc142;
 }
 
-.btn-danger, .btn-outline-danger:hover{
+.btn-danger, .btn-outline-danger:hover, .toggle-danger:selected{
     -fx-background-color: #F44336;
 }
 
-.btn-info, .btn-outline-info:hover{
+.btn-info, .btn-outline-info:hover, .toggle-info:selected{
     -fx-background-color: #03a9f4;
 }
 
-.btn-purple, .btn-outline-purple:hover{
+.btn-purple, .btn-outline-purple:hover, .toggle-purple:selected{
     -fx-background-color: #ad86df;
 }
 
-.btn-pink, .btn-outline-pink:hover{
+.btn-pink, .btn-outline-pink:hover, .toggle-pink:selected{
     -fx-background-color: #f13c6e;
 }
 
-.btn-inverse, .btn-outline-inverse:hover{
+.btn-inverse, .btn-outline-inverse:hover, .toggle-inverse:selected{
     -fx-background-color: #424242;
 }
 
@@ -332,7 +376,8 @@
 .btn-info, .btn-info:hover, .btn-outline-info:hover,
 .btn-purple, .btn-purple:hover, .btn-outline-purple:hover,
 .btn-pink, .btn-pink:hover, .btn-outline-pink:hover,
-.btn-inverse, .btn-inverse:hover, .btn-outline-inverse:hover{
+.btn-inverse, .btn-inverse:hover, .btn-outline-inverse:hover,
+.toggle-button:selected{
     -fx-border-color: transparent;
     -fx-text-fill: #FAFAFA;
 }
@@ -353,7 +398,7 @@
     -jfx-rippler-fill: #FAFAFA;
 }
 
-.button:pressed{
+.button:pressed, .toggle-button:pressed{
     -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 6,0.5,0.5,0.5);
 }
 
@@ -383,3 +428,81 @@
 .btn-xs{
     -fx-pref-width: 60px;
 }
+
+.jfx-toggle-button{
+    -jfx-untoggle-color: #fafafa;
+    -jfx-untoggle-line-color: #999999;
+    -jfx-toggle-color: #455A64;
+    -jfx-toggle-line-color: rgba(69, 90, 100, 0.4);
+}
+
+.jfx-toggle-button.toggle-primary{
+    -jfx-toggle-color: #3f51b5;
+    -jfx-toggle-line-color: rgba(63, 81, 181, 0.4);
+    -jfx-untoggle-line-color: #3f51b5;
+}
+
+.jfx-toggle-button.toggle-secondary{
+    -jfx-toggle-color: #6c757d;
+    -jfx-toggle-line-color: rgba(108, 117, 125, 0.4);
+    -jfx-untoggle-line-color: #6c757d;
+}
+
+.jfx-toggle-button.toggle-success{
+    -jfx-toggle-color: #4CAF50;
+    -jfx-toggle-line-color: rgba(76, 175, 80, 0.4);
+    -jfx-untoggle-line-color: #4CAF50;
+}
+
+.jfx-toggle-button.toggle-warning{
+    -jfx-toggle-color: #ebc142;
+    -jfx-toggle-line-color: rgba(235, 193, 66, 0.4);
+    -jfx-untoggle-line-color: #ebc142;
+}
+
+.jfx-toggle-button.toggle-danger{
+    -jfx-toggle-color: #F44336;
+    -jfx-toggle-line-color: rgba(244, 67, 54, 0.4);
+    -jfx-untoggle-line-color: #F44336;
+}
+
+.jfx-toggle-button.toggle-info{
+    -jfx-toggle-color: #03a9f4;
+    -jfx-toggle-line-color: rgba(3, 169, 244, 0.4);
+    -jfx-untoggle-line-color: #03a9f4;
+}
+
+.jfx-toggle-button.toggle-purple{
+    -jfx-toggle-color: #ad86df;
+    -jfx-toggle-line-color: rgba(173, 134, 223, 0.4);
+    -jfx-untoggle-line-color: #ad86df;
+}
+
+.jfx-toggle-button.toggle-pink{
+    -jfx-toggle-color: #f13c6e;
+    -jfx-toggle-line-color: rgba(241, 60, 110, 0.4);
+    -jfx-untoggle-line-color: #f13c6e;
+}
+
+.jfx-toggle-button.toggle-inverse{
+    -jfx-toggle-color: #212121;
+    -jfx-toggle-line-color: rgba(33, 33, 33, 0.4);
+    -jfx-untoggle-line-color: #212121;
+}
+
+.jfx-toggle-button, .jfx-toggle-button:selected{
+    -fx-border-color: transparent;
+    -fx-text-fill: #455A64;
+}
+
+.jfx-toggle-button, .jfx-toggle-button:hover, .jfx-toggle-button:selected{
+    -fx-background-color: transparent;
+}
+
+.jfx-toggle-button:pressed{
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0), 0,0,0,0);
+}
+
+/*
+
+*/

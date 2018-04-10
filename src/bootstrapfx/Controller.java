@@ -21,11 +21,11 @@ public class Controller implements Initializable {
     private Button sign_out, min_window, clz_window;
 
     @FXML
-    private JFXButton comp_btn_labels, comp_btn_buttons, comp_btn_fields,
-            comp_btn_views;
+    private JFXButton comp_btn_labels, comp_btn_buttons, comp_btn_toggles,
+            comp_btn_radios;
     @FXML
-    private AnchorPane comp_pane_labels, comp_pane_buttons, comp_pane_fields,
-            comp_pane_views;
+    private AnchorPane comp_pane_labels, comp_pane_buttons, comp_pane_toggles,
+            comp_pane_radios;
     
     public static Stage primaryStage;
     
@@ -38,8 +38,8 @@ public class Controller implements Initializable {
         controlSelected(((Group)((Button)e.getSource()).getParent()), e);
         if (e.getSource()== comp_btn_labels) comp_pane_labels.toFront();
         else if (e.getSource()== comp_btn_buttons) comp_pane_buttons.toFront();
-        else if (e.getSource()== comp_btn_fields) comp_pane_fields.toFront();
-        else if (e.getSource()== comp_btn_views) comp_pane_views.toFront();
+        else if (e.getSource()== comp_btn_toggles) comp_pane_toggles.toFront();
+        else if (e.getSource()== comp_btn_radios) comp_pane_radios.toFront();
     }
     
     @FXML
@@ -47,6 +47,7 @@ public class Controller implements Initializable {
         if (e.getSource()==min_window) primaryStage.setIconified(true);
         else if (e.getSource()==clz_window) {
             primaryStage.hide();
+            //shutdown hook here;
             System.exit(0);
         }
     }

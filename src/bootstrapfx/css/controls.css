@@ -10,14 +10,14 @@
     -fx-graphic:  url('../img/Buttons_17px.png');
 }
 
-#comp_btn_fields{
-    -fx-graphic:  url('../img/Fields_17px.png');
+#comp_btn_toggles{
+    -fx-graphic:  url('../img/Toggle_Button_17px.png');
 }
 
-#comp_btn_views{
-    -fx-graphic:  url('../img/Views_17px.png');
+#comp_btn_radios{
+    -fx-graphic:  url('../img/Radios_17px.png');
 }
 
-#comp_pane_labels, #comp_pane_buttons, #comp_btn_fields, #comp_pane_views{
+#comp_pane_labels, #comp_pane_buttons, #comp_pane_toggles, #comp_pane_radios{
     -fx-background-color:  #FFFFFF;
 }

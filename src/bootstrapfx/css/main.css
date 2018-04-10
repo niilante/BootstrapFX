@@ -90,6 +90,12 @@
     -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0), 0,0,0,0);
 }
 
+.separator:vertical *.line{
+    -fx-border-color: #90A4AE;
+    -fx-border-style: solid;
+    -fx-border-width: .5;
+}
+
 .main_pane_footer{}
 
 .main_pane_header .label, .main_pane_footer .label{
