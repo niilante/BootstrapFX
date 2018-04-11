@@ -82,7 +82,7 @@
 
 .ctrl-selected, .ctrl-selected:hover{
     -fx-background-color: #ECEFF1;
-    -fx-border-color: transparent transparent transparent #546E7A;
+    -fx-border-color: transparent transparent transparent #455A64;
     -fx-text-fill: #263238;
 }
 

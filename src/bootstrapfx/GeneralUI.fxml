@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXRadioButton?>
 <?import com.jfoenix.controls.JFXTabPane?>
 <?import com.jfoenix.controls.JFXToggleButton?>
 <?import java.lang.String?>
 <?import javafx.scene.Group?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
 <?import javafx.scene.control.Separator?>
 <?import javafx.scene.control.Tab?>
 <?import javafx.scene.control.ToggleButton?>
@@ -43,306 +45,32 @@
                                     <JFXButton fx:id="comp_btn_buttons" layoutY="35.0" onAction="#navigationControl" styleClass="ctrl-btn" text="Buttons" />
                                     <JFXButton fx:id="comp_btn_toggles" layoutY="70.0" onAction="#navigationControl" styleClass="ctrl-btn" text="Toggles" />
                                     <JFXButton fx:id="comp_btn_radios" layoutY="105.0" onAction="#navigationControl" styleClass="ctrl-btn" text="Radios" />
+                                    <JFXButton fx:id="comp_btn_checkbxs" layoutY="139.0" onAction="#navigationControl" styleClass="ctrl-btn" text="Checkboxes" />
+                                    <JFXButton fx:id="comp_btn_choicebxs" layoutY="174.0" onAction="#navigationControl" styleClass="ctrl-btn" text="Choiceboxes" />
+                                    <JFXButton fx:id="comp_btn_fields" layoutY="209.0" onAction="#navigationControl" styleClass="ctrl-btn" text="Fields" />
+                                    <JFXButton fx:id="comp_btn_lists" layoutY="244.0" onAction="#navigationControl" styleClass="ctrl-btn" text="ListView" />
+                                    <JFXButton fx:id="comp_btn_tables" layoutY="278.0" onAction="#navigationControl" styleClass="ctrl-btn" text="Table View" />
+                                    <JFXButton fx:id="comp_btn_trees" layoutY="313.0" onAction="#navigationControl" styleClass="ctrl-btn" text="Tree View" />
+                                    <JFXButton fx:id="comp_btn_ttables" layoutY="348.0" onAction="#navigationControl" styleClass="ctrl-btn" text="Tree Table View" />
                                  </children>
                               </Group>
                               <Separator layoutX="190.0" layoutY="26.0" orientation="VERTICAL" prefHeight="200.0" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="180.0" AnchorPane.topAnchor="25.0" />
-                              <AnchorPane fx:id="comp_pane_radios" layoutX="210.0" layoutY="30.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="20.0" />
-                              <AnchorPane fx:id="comp_pane_buttons" layoutX="210.0" layoutY="30.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="20.0">
-                                 <children>
-                                    <Label layoutX="71.0" text="JavaFX Buttons">
-                                       <styleClass>
-                                          <String fx:value="h4" />
-                                          <String fx:value="lead" />
-                                       </styleClass>
-                                    </Label>
-                                    <Separator layoutX="8.0" layoutY="25.0" prefWidth="200.0" AnchorPane.leftAnchor="8.0" AnchorPane.rightAnchor="447.0" AnchorPane.topAnchor="25.0" />
-                                    <Button layoutX="78.0" layoutY="39.0" mnemonicParsing="false" styleClass="btn-lg" text="Default Button" AnchorPane.leftAnchor="78.0" AnchorPane.topAnchor="39.0" />
-                                    <Button layoutX="8.0" layoutY="76.0" mnemonicParsing="false" text="btn-primary" AnchorPane.leftAnchor="8.0" AnchorPane.topAnchor="76.0">
-                                       <styleClass>
-                                          <String fx:value="btn-lg" />
-                                          <String fx:value="btn-primary" />
-                                       </styleClass>
-                                    </Button>
-                                    <Button layoutX="8.0" layoutY="113.0" mnemonicParsing="false" text="btn-secondary" AnchorPane.leftAnchor="8.0" AnchorPane.topAnchor="113.0">
-                                       <styleClass>
-                                          <String fx:value="btn-lg" />
-                                          <String fx:value="btn-secondary" />
-                                       </styleClass>
-                                    </Button>
-                                    <Button layoutX="8.0" layoutY="150.0" mnemonicParsing="false" text="btn-success" AnchorPane.leftAnchor="8.0" AnchorPane.topAnchor="150.0">
-                                       <styleClass>
-                                          <String fx:value="btn-lg" />
-                                          <String fx:value="btn-success" />
-                                       </styleClass>
-                                    </Button>
-                                    <Button layoutX="8.0" layoutY="187.0" mnemonicParsing="false" text="btn-warning" AnchorPane.leftAnchor="8.0" AnchorPane.topAnchor="187.0">
-                                       <styleClass>
-                                          <String fx:value="btn-lg" />
-                                          <String fx:value="btn-warning" />
-                                       </styleClass>
-                                    </Button>
-                                    <Button layoutX="8.0" layoutY="224.0" mnemonicParsing="false" text="btn-danger" AnchorPane.leftAnchor="8.0" AnchorPane.topAnchor="224.0">
-                                       <styleClass>
-                                          <String fx:value="btn-lg" />
-                                          <String fx:value="btn-danger" />
-                                       </styleClass>
-                                    </Button>
-                                    <Button layoutX="8.0" layoutY="261.0" mnemonicParsing="false" text="btn-info" AnchorPane.leftAnchor="8.0" AnchorPane.topAnchor="261.0">
-                                       <styleClass>
-                                          <String fx:value="btn-lg" />
-                                          <String fx:value="btn-info" />
-                                       </styleClass>
-                                    </Button>
-                                    <Button layoutX="8.0" layoutY="298.0" mnemonicParsing="false" text="btn-purple" AnchorPane.leftAnchor="8.0" AnchorPane.topAnchor="298.0">
-                                       <styleClass>
-                                          <String fx:value="btn-lg" />
-                                          <String fx:value="btn-purple" />
-                                       </styleClass>
-                                    </Button>
-                                    <Button layoutX="8.0" layoutY="335.0" mnemonicParsing="false" text="btn-pink" AnchorPane.leftAnchor="8.0" AnchorPane.topAnchor="335.0">
-                                       <styleClass>
-                                          <String fx:value="btn-lg" />
-                                          <String fx:value="btn-pink" />
-                                       </styleClass>
-                                    </Button>
-                                    <Button layoutX="8.0" layoutY="372.0" mnemonicParsing="false" text="btn-inverse" AnchorPane.leftAnchor="8.0" AnchorPane.topAnchor="372.0">
-                                       <styleClass>
-                                          <String fx:value="btn-lg" />
-                                          <String fx:value="btn-inverse" />
-                                       </styleClass>
-                                    </Button>
-                                    <Button layoutX="138.0" layoutY="76.0" mnemonicParsing="false" text="btn-outline-primary" AnchorPane.topAnchor="76.0">
-                                       <styleClass>
-                                          <String fx:value="btn-xl" />
-                                          <String fx:value="btn-outline-primary" />
-                                       </styleClass>
-                                    </Button>
-                                    <Button layoutX="138.0" layoutY="113.0" mnemonicParsing="false" text="btn-outline-secondary" AnchorPane.topAnchor="113.0">
-                                       <styleClass>
-                                          <String fx:value="btn-xl" />
-                                          <String fx:value="btn-outline-secondary" />
-                                       </styleClass>
-                                    </Button>
-                                    <Button layoutX="138.0" layoutY="150.0" mnemonicParsing="false" text="btn-outline-sucess" AnchorPane.topAnchor="150.0">
-                                       <styleClass>
-                                          <String fx:value="btn-xl" />
-                                          <String fx:value="btn-outline-success" />
-                                       </styleClass>
-                                    </Button>
-                                    <Button layoutX="138.0" layoutY="187.0" mnemonicParsing="false" text="btn-outline-warning" AnchorPane.topAnchor="187.0">
-                                       <styleClass>
-                                          <String fx:value="btn-xl" />
-                                          <String fx:value="btn-outline-warning" />
-                                       </styleClass>
-                                    </Button>
-                                    <Button layoutX="138.0" layoutY="224.0" mnemonicParsing="false" text="btn-outline-danger" AnchorPane.topAnchor="224.0">
-                                       <styleClass>
-                                          <String fx:value="btn-xl" />
-                                          <String fx:value="btn-outline-danger" />
-                                       </styleClass>
-                                    </Button>
-                                    <Button layoutX="138.0" layoutY="261.0" mnemonicParsing="false" text="btn-outline-info" AnchorPane.topAnchor="261.0">
-                                       <styleClass>
-                                          <String fx:value="btn-xl" />
-                                          <String fx:value="btn-outline-info" />
-                                       </styleClass>
-                                    </Button>
-                                    <Button layoutX="138.0" layoutY="298.0" mnemonicParsing="false" text="btn-outline-purple" AnchorPane.topAnchor="298.0">
-                                       <styleClass>
-                                          <String fx:value="btn-xl" />
-                                          <String fx:value="btn-outline-purple" />
-                                       </styleClass>
-                                    </Button>
-                                    <Button layoutX="138.0" layoutY="335.0" mnemonicParsing="false" text="btn-outline-pink" AnchorPane.topAnchor="335.0">
-                                       <styleClass>
-                                          <String fx:value="btn-xl" />
-                                          <String fx:value="btn-outline-pink" />
-                                       </styleClass>
-                                    </Button>
-                                    <Button layoutX="138.0" layoutY="372.0" mnemonicParsing="false" text="btn-outline-inverse" AnchorPane.topAnchor="372.0">
-                                       <styleClass>
-                                          <String fx:value="btn-xl" />
-                                          <String fx:value="btn-outline-inverse" />
-                                       </styleClass>
-                                    </Button>
-                                    <Label layoutX="360.0" text="JFoenix Buttons" AnchorPane.topAnchor="0.0">
-                                       <styleClass>
-                                          <String fx:value="h4" />
-                                          <String fx:value="lead" />
-                                       </styleClass>
-                                    </Label>
-                                    <Separator layoutX="298.0" layoutY="25.0" prefWidth="200.0" AnchorPane.leftAnchor="298.0" AnchorPane.rightAnchor="162.0" AnchorPane.topAnchor="25.0" />
-                                    <JFXButton layoutX="366.0" layoutY="39.0" styleClass="btn-lg" text="Default Button" />
-                                    <JFXButton layoutX="295.0" layoutY="76.0" text="btn-primary" AnchorPane.topAnchor="76.0">
-                                       <styleClass>
-                                          <String fx:value="btn-lg" />
-                                          <String fx:value="btn-primary" />
-                                       </styleClass>
-                                    </JFXButton>
-                                    <JFXButton layoutX="295.0" layoutY="113.0" text="btn-secondary" AnchorPane.topAnchor="113.0">
-                                       <styleClass>
-                                          <String fx:value="btn-lg" />
-                                          <String fx:value="btn-secondary" />
-                                       </styleClass>
-                                    </JFXButton>
-                                    <JFXButton layoutX="295.0" layoutY="150.0" text="btn-success" AnchorPane.topAnchor="150.0">
-                                       <styleClass>
-                                          <String fx:value="btn-lg" />
-                                          <String fx:value="btn-success" />
-                                       </styleClass>
-                                    </JFXButton>
-                                    <JFXButton layoutX="295.0" layoutY="187.0" text="btn-warning" AnchorPane.topAnchor="187.0">
-                                       <styleClass>
-                                          <String fx:value="btn-lg" />
-                                          <String fx:value="btn-warning" />
-                                       </styleClass>
-                                    </JFXButton>
-                                    <JFXButton layoutX="295.0" layoutY="224.0" text="btn-danger" AnchorPane.topAnchor="224.0">
-                                       <styleClass>
-                                          <String fx:value="btn-lg" />
-                                          <String fx:value="btn-danger" />
-                                       </styleClass>
-                                    </JFXButton>
-                                    <JFXButton layoutX="295.0" layoutY="261.0" text="btn-info" AnchorPane.topAnchor="261.0">
-                                       <styleClass>
-                                          <String fx:value="btn-lg" />
-                                          <String fx:value="btn-info" />
-                                       </styleClass>
-                                    </JFXButton>
-                                    <JFXButton layoutX="295.0" layoutY="298.0" text="btn-purple" AnchorPane.topAnchor="298.0">
-                                       <styleClass>
-                                          <String fx:value="btn-lg" />
-                                          <String fx:value="btn-purple" />
-                                       </styleClass>
-                                    </JFXButton>
-                                    <JFXButton layoutX="295.0" layoutY="335.0" text="btn-pink" AnchorPane.topAnchor="335.0">
-                                       <styleClass>
-                                          <String fx:value="btn-lg" />
-                                          <String fx:value="btn-pink" />
-                                       </styleClass>
-                                    </JFXButton>
-                                    <JFXButton layoutX="295.0" layoutY="372.0" text="btn-inverse" AnchorPane.topAnchor="372.0">
-                                       <styleClass>
-                                          <String fx:value="btn-lg" />
-                                          <String fx:value="btn-inverse" />
-                                       </styleClass>
-                                    </JFXButton>
-                                    <JFXButton layoutX="426.0" layoutY="76.0" text="btn-outline-primary" AnchorPane.topAnchor="76.0">
-                                       <styleClass>
-                                          <String fx:value="btn-xl" />
-                                          <String fx:value="btn-outline-primary" />
-                                       </styleClass>
-                                    </JFXButton>
-                                    <JFXButton layoutX="426.0" layoutY="113.0" text="btn-outline-secondary" AnchorPane.topAnchor="113.0">
-                                       <styleClass>
-                                          <String fx:value="btn-xl" />
-                                          <String fx:value="btn-outline-secondary" />
-                                       </styleClass>
-                                    </JFXButton>
-                                    <JFXButton layoutX="426.0" layoutY="150.0" text="btn-outline-sucess" AnchorPane.topAnchor="150.0">
-                                       <styleClass>
-                                          <String fx:value="btn-xl" />
-                                          <String fx:value="btn-outline-success" />
-                                       </styleClass>
-                                    </JFXButton>
-                                    <JFXButton layoutX="426.0" layoutY="187.0" text="btn-outline-warning" AnchorPane.topAnchor="187.0">
-                                       <styleClass>
-                                          <String fx:value="btn-xl" />
-                                          <String fx:value="btn-outline-warning" />
-                                       </styleClass>
-                                    </JFXButton>
-                                    <JFXButton layoutX="426.0" layoutY="224.0" text="btn-outline-danger" AnchorPane.topAnchor="224.0">
-                                       <styleClass>
-                                          <String fx:value="btn-xl" />
-                                          <String fx:value="btn-outline-danger" />
-                                       </styleClass>
-                                    </JFXButton>
-                                    <JFXButton layoutX="426.0" layoutY="261.0" text="btn-outline-info" AnchorPane.topAnchor="261.0">
-                                       <styleClass>
-                                          <String fx:value="btn-xl" />
-                                          <String fx:value="btn-outline-info" />
-                                       </styleClass>
-                                    </JFXButton>
-                                    <JFXButton layoutX="426.0" layoutY="298.0" text="btn-outline-purple" AnchorPane.topAnchor="298.0">
-                                       <styleClass>
-                                          <String fx:value="btn-xl" />
-                                          <String fx:value="btn-outline-purple" />
-                                       </styleClass>
-                                    </JFXButton>
-                                    <JFXButton layoutX="426.0" layoutY="335.0" text="btn-outline-pink" AnchorPane.topAnchor="335.0">
-                                       <styleClass>
-                                          <String fx:value="btn-xl" />
-                                          <String fx:value="btn-outline-pink" />
-                                       </styleClass>
-                                    </JFXButton>
-                                    <JFXButton layoutX="426.0" layoutY="372.0" text="btn-outline-inverse" AnchorPane.topAnchor="372.0">
-                                       <styleClass>
-                                          <String fx:value="btn-xl" />
-                                          <String fx:value="btn-outline-inverse" />
-                                       </styleClass>
-                                    </JFXButton>
-                                    <Label layoutX="627.0" layoutY="41.0" text="Sizes">
-                                       <styleClass>
-                                          <String fx:value="h4" />
-                                          <String fx:value="lead" />
-                                       </styleClass>
-                                    </Label>
-                                    <JFXButton layoutX="579.0" layoutY="76.0" text="btn-xl">
-                                       <styleClass>
-                                          <String fx:value="btn-xl" />
-                                          <String fx:value="btn-primary" />
-                                       </styleClass>
-                                    </JFXButton>
-                                    <JFXButton layoutX="590.0" layoutY="113.0" text="btn-lg">
-                                       <styleClass>
-                                          <String fx:value="btn-lg" />
-                                          <String fx:value="btn-secondary" />
-                                       </styleClass>
-                                    </JFXButton>
-                                    <JFXButton layoutX="601.0" layoutY="150.0" text="btn-md">
-                                       <styleClass>
-                                          <String fx:value="btn-md" />
-                                          <String fx:value="btn-success" />
-                                       </styleClass>
-                                    </JFXButton>
-                                    <JFXButton layoutX="612.0" layoutY="187.0" text="btn-sm">
-                                       <styleClass>
-                                          <String fx:value="btn-sm" />
-                                          <String fx:value="btn-warning" />
-                                       </styleClass>
-                                    </JFXButton>
-                                    <JFXButton layoutX="623.0" layoutY="224.0" text="btn-xs">
-                                       <styleClass>
-                                          <String fx:value="btn-xs" />
-                                          <String fx:value="btn-danger" />
-                                       </styleClass>
-                                    </JFXButton>
-                                 </children>
-                              </AnchorPane>
                               <AnchorPane fx:id="comp_pane_toggles" layoutX="220.0" layoutY="40.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="20.0">
                                  <children>
                                     <Label layoutX="10.0" layoutY="10.0" text="JavaFX ToggleButtons" AnchorPane.topAnchor="0.0">
                                        <styleClass>
-                                          <String fx:value="h4" />
-                                          <String fx:value="lead" />
+                                          <String fx:value="h5" />
+                                          <String fx:value="semibold" />
+                                          <String fx:value="label-secondary" />
                                        </styleClass>
                                     </Label>
                                     <Separator layoutX="10.0" layoutY="28.0" prefWidth="200.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="28.0" />
-                                    <ToggleButton mnemonicParsing="false" text="Default" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="40.0">
-                                       <styleClass>
-                                          <String fx:value="btn-lg" />
-                                          <String fx:value="toggle-" />
-                                       </styleClass>
+                                    <ToggleButton mnemonicParsing="false" styleClass="btn-lg" text="Default" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="40.0">
                                        <toggleGroup>
                                           <ToggleGroup fx:id="group_1" />
                                        </toggleGroup>
                                     </ToggleButton>
-                                    <ToggleButton layoutX="10.0" layoutY="70.0" mnemonicParsing="false" text="Default" toggleGroup="$group_1" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="70.0">
-                                       <styleClass>
-                                          <String fx:value="btn-lg" />
-                                          <String fx:value="toggle-" />
-                                       </styleClass>
-                                    </ToggleButton>
+                                    <ToggleButton layoutX="10.0" layoutY="70.0" mnemonicParsing="false" styleClass="btn-lg" text="Default" toggleGroup="$group_1" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="70.0" />
                                     <ToggleButton layoutX="160.0" layoutY="40.0" mnemonicParsing="false" text="toggle-primary" AnchorPane.leftAnchor="160.0" AnchorPane.topAnchor="40.0">
                                        <styleClass>
                                           <String fx:value="btn-lg" />
@@ -480,8 +208,9 @@
                                     </ToggleButton>
                                     <Label layoutX="10.0" layoutY="200.0" text="JFoenix ToggleButtons" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="200.0">
                                        <styleClass>
-                                          <String fx:value="h4" />
-                                          <String fx:value="lead" />
+                                          <String fx:value="h5" />
+                                          <String fx:value="semibold" />
+                                          <String fx:value="label-secondary" />
                                        </styleClass>
                                     </Label>
                                     <Separator layoutX="10.0" layoutY="228.0" prefWidth="200.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="228.0" />
@@ -496,12 +225,411 @@
                                     <JFXToggleButton layoutX="450.0" layoutY="317.0" styleClass="toggle-pink" text="Pink" toggleGroup="$group_9" />
                                     <JFXToggleButton layoutX="600.0" layoutY="317.0" styleClass="toggle-inverse" text="Inverse" toggleGroup="$group_0" />
                                  </children></AnchorPane>
+                              <AnchorPane fx:id="comp_pane_buttons" layoutX="210.0" layoutY="30.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="20.0">
+                                 <children>
+                                    <Label layoutX="71.0" text="JavaFX Buttons">
+                                       <styleClass>
+                                          <String fx:value="h5" />
+                                          <String fx:value="semibold" />
+                                          <String fx:value="label-secondary" />
+                                       </styleClass>
+                                    </Label>
+                                    <Separator layoutX="8.0" layoutY="25.0" prefWidth="200.0" AnchorPane.leftAnchor="8.0" AnchorPane.rightAnchor="447.0" AnchorPane.topAnchor="25.0" />
+                                    <Button layoutX="78.0" layoutY="39.0" mnemonicParsing="false" styleClass="btn-lg" text="Default Button" AnchorPane.leftAnchor="78.0" AnchorPane.topAnchor="39.0" />
+                                    <Button layoutX="8.0" layoutY="76.0" mnemonicParsing="false" text="btn-primary" AnchorPane.leftAnchor="8.0" AnchorPane.topAnchor="76.0">
+                                       <styleClass>
+                                          <String fx:value="btn-lg" />
+                                          <String fx:value="btn-primary" />
+                                       </styleClass>
+                                    </Button>
+                                    <Button layoutX="8.0" layoutY="113.0" mnemonicParsing="false" text="btn-secondary" AnchorPane.leftAnchor="8.0" AnchorPane.topAnchor="113.0">
+                                       <styleClass>
+                                          <String fx:value="btn-lg" />
+                                          <String fx:value="btn-secondary" />
+                                       </styleClass>
+                                    </Button>
+                                    <Button layoutX="8.0" layoutY="150.0" mnemonicParsing="false" text="btn-success" AnchorPane.leftAnchor="8.0" AnchorPane.topAnchor="150.0">
+                                       <styleClass>
+                                          <String fx:value="btn-lg" />
+                                          <String fx:value="btn-success" />
+                                       </styleClass>
+                                    </Button>
+                                    <Button layoutX="8.0" layoutY="187.0" mnemonicParsing="false" text="btn-warning" AnchorPane.leftAnchor="8.0" AnchorPane.topAnchor="187.0">
+                                       <styleClass>
+                                          <String fx:value="btn-lg" />
+                                          <String fx:value="btn-warning" />
+                                       </styleClass>
+                                    </Button>
+                                    <Button layoutX="8.0" layoutY="224.0" mnemonicParsing="false" text="btn-danger" AnchorPane.leftAnchor="8.0" AnchorPane.topAnchor="224.0">
+                                       <styleClass>
+                                          <String fx:value="btn-lg" />
+                                          <String fx:value="btn-danger" />
+                                       </styleClass>
+                                    </Button>
+                                    <Button layoutX="8.0" layoutY="261.0" mnemonicParsing="false" text="btn-info" AnchorPane.leftAnchor="8.0" AnchorPane.topAnchor="261.0">
+                                       <styleClass>
+                                          <String fx:value="btn-lg" />
+                                          <String fx:value="btn-info" />
+                                       </styleClass>
+                                    </Button>
+                                    <Button layoutX="8.0" layoutY="298.0" mnemonicParsing="false" text="btn-purple" AnchorPane.leftAnchor="8.0" AnchorPane.topAnchor="298.0">
+                                       <styleClass>
+                                          <String fx:value="btn-lg" />
+                                          <String fx:value="btn-purple" />
+                                       </styleClass>
+                                    </Button>
+                                    <Button layoutX="8.0" layoutY="335.0" mnemonicParsing="false" text="btn-pink" AnchorPane.leftAnchor="8.0" AnchorPane.topAnchor="335.0">
+                                       <styleClass>
+                                          <String fx:value="btn-lg" />
+                                          <String fx:value="btn-pink" />
+                                       </styleClass>
+                                    </Button>
+                                    <Button layoutX="8.0" layoutY="372.0" mnemonicParsing="false" text="btn-inverse" AnchorPane.leftAnchor="8.0" AnchorPane.topAnchor="372.0">
+                                       <styleClass>
+                                          <String fx:value="btn-lg" />
+                                          <String fx:value="btn-inverse" />
+                                       </styleClass>
+                                    </Button>
+                                    <Button layoutX="138.0" layoutY="76.0" mnemonicParsing="false" text="btn-outline-primary" AnchorPane.topAnchor="76.0">
+                                       <styleClass>
+                                          <String fx:value="btn-xl" />
+                                          <String fx:value="btn-outline-primary" />
+                                       </styleClass>
+                                    </Button>
+                                    <Button layoutX="138.0" layoutY="113.0" mnemonicParsing="false" text="btn-outline-secondary" AnchorPane.topAnchor="113.0">
+                                       <styleClass>
+                                          <String fx:value="btn-xl" />
+                                          <String fx:value="btn-outline-secondary" />
+                                       </styleClass>
+                                    </Button>
+                                    <Button layoutX="138.0" layoutY="150.0" mnemonicParsing="false" text="btn-outline-sucess" AnchorPane.topAnchor="150.0">
+                                       <styleClass>
+                                          <String fx:value="btn-xl" />
+                                          <String fx:value="btn-outline-success" />
+                                       </styleClass>
+                                    </Button>
+                                    <Button layoutX="138.0" layoutY="187.0" mnemonicParsing="false" text="btn-outline-warning" AnchorPane.topAnchor="187.0">
+                                       <styleClass>
+                                          <String fx:value="btn-xl" />
+                                          <String fx:value="btn-outline-warning" />
+                                       </styleClass>
+                                    </Button>
+                                    <Button layoutX="138.0" layoutY="224.0" mnemonicParsing="false" text="btn-outline-danger" AnchorPane.topAnchor="224.0">
+                                       <styleClass>
+                                          <String fx:value="btn-xl" />
+                                          <String fx:value="btn-outline-danger" />
+                                       </styleClass>
+                                    </Button>
+                                    <Button layoutX="138.0" layoutY="261.0" mnemonicParsing="false" text="btn-outline-info" AnchorPane.topAnchor="261.0">
+                                       <styleClass>
+                                          <String fx:value="btn-xl" />
+                                          <String fx:value="btn-outline-info" />
+                                       </styleClass>
+                                    </Button>
+                                    <Button layoutX="138.0" layoutY="298.0" mnemonicParsing="false" text="btn-outline-purple" AnchorPane.topAnchor="298.0">
+                                       <styleClass>
+                                          <String fx:value="btn-xl" />
+                                          <String fx:value="btn-outline-purple" />
+                                       </styleClass>
+                                    </Button>
+                                    <Button layoutX="138.0" layoutY="335.0" mnemonicParsing="false" text="btn-outline-pink" AnchorPane.topAnchor="335.0">
+                                       <styleClass>
+                                          <String fx:value="btn-xl" />
+                                          <String fx:value="btn-outline-pink" />
+                                       </styleClass>
+                                    </Button>
+                                    <Button layoutX="138.0" layoutY="372.0" mnemonicParsing="false" text="btn-outline-inverse" AnchorPane.topAnchor="372.0">
+                                       <styleClass>
+                                          <String fx:value="btn-xl" />
+                                          <String fx:value="btn-outline-inverse" />
+                                       </styleClass>
+                                    </Button>
+                                    <Label layoutX="360.0" text="JFoenix Buttons" AnchorPane.topAnchor="0.0">
+                                       <styleClass>
+                                          <String fx:value="h5" />
+                                          <String fx:value="semibold" />
+                                          <String fx:value="label-secondary" />
+                                       </styleClass>
+                                    </Label>
+                                    <Separator layoutX="298.0" layoutY="25.0" prefWidth="200.0" AnchorPane.leftAnchor="298.0" AnchorPane.rightAnchor="162.0" AnchorPane.topAnchor="25.0" />
+                                    <JFXButton layoutX="366.0" layoutY="39.0" styleClass="btn-lg" text="Default Button" />
+                                    <JFXButton layoutX="295.0" layoutY="76.0" text="btn-primary" AnchorPane.topAnchor="76.0">
+                                       <styleClass>
+                                          <String fx:value="btn-lg" />
+                                          <String fx:value="btn-primary" />
+                                       </styleClass>
+                                    </JFXButton>
+                                    <JFXButton layoutX="295.0" layoutY="113.0" text="btn-secondary" AnchorPane.topAnchor="113.0">
+                                       <styleClass>
+                                          <String fx:value="btn-lg" />
+                                          <String fx:value="btn-secondary" />
+                                       </styleClass>
+                                    </JFXButton>
+                                    <JFXButton layoutX="295.0" layoutY="150.0" text="btn-success" AnchorPane.topAnchor="150.0">
+                                       <styleClass>
+                                          <String fx:value="btn-lg" />
+                                          <String fx:value="btn-success" />
+                                       </styleClass>
+                                    </JFXButton>
+                                    <JFXButton layoutX="295.0" layoutY="187.0" text="btn-warning" AnchorPane.topAnchor="187.0">
+                                       <styleClass>
+                                          <String fx:value="btn-lg" />
+                                          <String fx:value="btn-warning" />
+                                       </styleClass>
+                                    </JFXButton>
+                                    <JFXButton layoutX="295.0" layoutY="224.0" text="btn-danger" AnchorPane.topAnchor="224.0">
+                                       <styleClass>
+                                          <String fx:value="btn-lg" />
+                                          <String fx:value="btn-danger" />
+                                       </styleClass>
+                                    </JFXButton>
+                                    <JFXButton layoutX="295.0" layoutY="261.0" text="btn-info" AnchorPane.topAnchor="261.0">
+                                       <styleClass>
+                                          <String fx:value="btn-lg" />
+                                          <String fx:value="btn-info" />
+                                       </styleClass>
+                                    </JFXButton>
+                                    <JFXButton layoutX="295.0" layoutY="298.0" text="btn-purple" AnchorPane.topAnchor="298.0">
+                                       <styleClass>
+                                          <String fx:value="btn-lg" />
+                                          <String fx:value="btn-purple" />
+                                       </styleClass>
+                                    </JFXButton>
+                                    <JFXButton layoutX="295.0" layoutY="335.0" text="btn-pink" AnchorPane.topAnchor="335.0">
+                                       <styleClass>
+                                          <String fx:value="btn-lg" />
+                                          <String fx:value="btn-pink" />
+                                       </styleClass>
+                                    </JFXButton>
+                                    <JFXButton layoutX="295.0" layoutY="372.0" text="btn-inverse" AnchorPane.topAnchor="372.0">
+                                       <styleClass>
+                                          <String fx:value="btn-lg" />
+                                          <String fx:value="btn-inverse" />
+                                       </styleClass>
+                                    </JFXButton>
+                                    <JFXButton layoutX="426.0" layoutY="76.0" text="btn-outline-primary" AnchorPane.topAnchor="76.0">
+                                       <styleClass>
+                                          <String fx:value="btn-xl" />
+                                          <String fx:value="btn-outline-primary" />
+                                       </styleClass>
+                                    </JFXButton>
+                                    <JFXButton layoutX="426.0" layoutY="113.0" text="btn-outline-secondary" AnchorPane.topAnchor="113.0">
+                                       <styleClass>
+                                          <String fx:value="btn-xl" />
+                                          <String fx:value="btn-outline-secondary" />
+                                       </styleClass>
+                                    </JFXButton>
+                                    <JFXButton layoutX="426.0" layoutY="150.0" text="btn-outline-sucess" AnchorPane.topAnchor="150.0">
+                                       <styleClass>
+                                          <String fx:value="btn-xl" />
+                                          <String fx:value="btn-outline-success" />
+                                       </styleClass>
+                                    </JFXButton>
+                                    <JFXButton layoutX="426.0" layoutY="187.0" text="btn-outline-warning" AnchorPane.topAnchor="187.0">
+                                       <styleClass>
+                                          <String fx:value="btn-xl" />
+                                          <String fx:value="btn-outline-warning" />
+                                       </styleClass>
+                                    </JFXButton>
+                                    <JFXButton layoutX="426.0" layoutY="224.0" text="btn-outline-danger" AnchorPane.topAnchor="224.0">
+                                       <styleClass>
+                                          <String fx:value="btn-xl" />
+                                          <String fx:value="btn-outline-danger" />
+                                       </styleClass>
+                                    </JFXButton>
+                                    <JFXButton layoutX="426.0" layoutY="261.0" text="btn-outline-info" AnchorPane.topAnchor="261.0">
+                                       <styleClass>
+                                          <String fx:value="btn-xl" />
+                                          <String fx:value="btn-outline-info" />
+                                       </styleClass>
+                                    </JFXButton>
+                                    <JFXButton layoutX="426.0" layoutY="298.0" text="btn-outline-purple" AnchorPane.topAnchor="298.0">
+                                       <styleClass>
+                                          <String fx:value="btn-xl" />
+                                          <String fx:value="btn-outline-purple" />
+                                       </styleClass>
+                                    </JFXButton>
+                                    <JFXButton layoutX="426.0" layoutY="335.0" text="btn-outline-pink" AnchorPane.topAnchor="335.0">
+                                       <styleClass>
+                                          <String fx:value="btn-xl" />
+                                          <String fx:value="btn-outline-pink" />
+                                       </styleClass>
+                                    </JFXButton>
+                                    <JFXButton layoutX="426.0" layoutY="372.0" text="btn-outline-inverse" AnchorPane.topAnchor="372.0">
+                                       <styleClass>
+                                          <String fx:value="btn-xl" />
+                                          <String fx:value="btn-outline-inverse" />
+                                       </styleClass>
+                                    </JFXButton>
+                                    <Label layoutX="627.0" layoutY="41.0" text="Sizes">
+                                       <styleClass>
+                                          <String fx:value="h5" />
+                                          <String fx:value="semibold" />
+                                          <String fx:value="label-secondary" />
+                                       </styleClass>
+                                    </Label>
+                                    <JFXButton layoutX="579.0" layoutY="76.0" text="btn-xl">
+                                       <styleClass>
+                                          <String fx:value="btn-xl" />
+                                          <String fx:value="btn-primary" />
+                                       </styleClass>
+                                    </JFXButton>
+                                    <JFXButton layoutX="590.0" layoutY="113.0" text="btn-lg">
+                                       <styleClass>
+                                          <String fx:value="btn-lg" />
+                                          <String fx:value="btn-secondary" />
+                                       </styleClass>
+                                    </JFXButton>
+                                    <JFXButton layoutX="601.0" layoutY="150.0" text="btn-md">
+                                       <styleClass>
+                                          <String fx:value="btn-md" />
+                                          <String fx:value="btn-success" />
+                                       </styleClass>
+                                    </JFXButton>
+                                    <JFXButton layoutX="612.0" layoutY="187.0" text="btn-sm">
+                                       <styleClass>
+                                          <String fx:value="btn-sm" />
+                                          <String fx:value="btn-warning" />
+                                       </styleClass>
+                                    </JFXButton>
+                                    <JFXButton layoutX="623.0" layoutY="224.0" text="btn-xs">
+                                       <styleClass>
+                                          <String fx:value="btn-xs" />
+                                          <String fx:value="btn-danger" />
+                                       </styleClass>
+                                    </JFXButton>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane fx:id="comp_pane_radios" layoutX="210.0" layoutY="30.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="20.0">
+                                 <children>
+                                    <Label text="JavaFX RadioButtons">
+                                       <styleClass>
+                                          <String fx:value="h5" />
+                                          <String fx:value="semibold" />
+                                          <String fx:value="label-secondary" />
+                                       </styleClass>
+                                    </Label>
+                                    <Separator layoutY="15.0" prefWidth="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="30.0" />
+                                    <RadioButton layoutX="10.0" layoutY="42.0" mnemonicParsing="false" selected="true" text="Default" AnchorPane.leftAnchor="10.0">
+                                       <toggleGroup>
+                                          <ToggleGroup fx:id="radio_0" />
+                                       </toggleGroup></RadioButton>
+                                    <RadioButton layoutX="40.0" layoutY="42.0" mnemonicParsing="false" styleClass="radio-primary" text="radio-primary" AnchorPane.leftAnchor="150.0">
+                                       <toggleGroup>
+                                          <ToggleGroup fx:id="radio_1" />
+                                       </toggleGroup></RadioButton>
+                                    <RadioButton layoutX="10.0" layoutY="42.0" mnemonicParsing="false" selected="true" styleClass="radio-secondary" text="radio-secondary" AnchorPane.leftAnchor="300.0">
+                                       <toggleGroup>
+                                          <ToggleGroup fx:id="radio_2" />
+                                       </toggleGroup></RadioButton>
+                                    <RadioButton layoutX="150.0" layoutY="42.0" mnemonicParsing="false" styleClass="radio-success" text="radio-success" AnchorPane.leftAnchor="450.0">
+                                       <toggleGroup>
+                                          <ToggleGroup fx:id="radio_3" />
+                                       </toggleGroup></RadioButton>
+                                    <RadioButton layoutX="450.0" layoutY="42.0" mnemonicParsing="false" selected="true" styleClass="radio-warning" text="radio-warning" AnchorPane.leftAnchor="600.0">
+                                       <toggleGroup>
+                                          <ToggleGroup fx:id="radio_4" />
+                                       </toggleGroup></RadioButton>
+                                    <RadioButton layoutX="10.0" layoutY="65.0" mnemonicParsing="false" text="Default" toggleGroup="$radio_0" />
+                                    <RadioButton layoutX="150.0" layoutY="65.0" mnemonicParsing="false" selected="true" styleClass="radio-primary" text="radio-primary" toggleGroup="$radio_1" />
+                                    <RadioButton layoutX="300.0" layoutY="65.0" mnemonicParsing="false" styleClass="radio-secondary" text="radio-secondary" toggleGroup="$radio_2" />
+                                    <RadioButton layoutX="450.0" layoutY="65.0" mnemonicParsing="false" selected="true" styleClass="radio-success" text="radio-success" toggleGroup="$radio_3" />
+                                    <RadioButton layoutX="600.0" layoutY="65.0" mnemonicParsing="false" styleClass="radio-warning" text="radio-warning" toggleGroup="$radio_4" />
+                                    <RadioButton layoutX="10.0" layoutY="100.0" mnemonicParsing="false" styleClass="radio-danger" text="radio-danger">
+                                       <toggleGroup>
+                                          <ToggleGroup fx:id="radio_5" />
+                                       </toggleGroup></RadioButton>
+                                    <RadioButton layoutX="150.0" layoutY="100.0" mnemonicParsing="false" selected="true" styleClass="radio-info" text="radio-info" toggleGroup="$radio_5" AnchorPane.leftAnchor="150.0" />
+                                    <RadioButton layoutX="300.0" layoutY="100.0" mnemonicParsing="false" selected="true" styleClass="radio-purple" text="radio-purple" AnchorPane.leftAnchor="300.0">
+                                       <toggleGroup>
+                                          <ToggleGroup fx:id="radio_6" />
+                                       </toggleGroup></RadioButton>
+                                    <RadioButton layoutX="450.0" layoutY="100.0" mnemonicParsing="false" selected="true" styleClass="radio-pink" text="radio-pink" AnchorPane.leftAnchor="450.0">
+                                       <toggleGroup>
+                                          <ToggleGroup fx:id="radio_7" />
+                                       </toggleGroup></RadioButton>
+                                    <RadioButton layoutX="600.0" layoutY="100.0" mnemonicParsing="false" selected="true" styleClass="radio-inverse" text="radio-inverse" AnchorPane.leftAnchor="600.0">
+                                       <toggleGroup>
+                                          <ToggleGroup fx:id="radio_8" />
+                                       </toggleGroup></RadioButton>
+                                    <RadioButton layoutX="10.0" layoutY="124.0" mnemonicParsing="false" styleClass="radio-danger" text="radio-danger" toggleGroup="$radio_5" />
+                                    <RadioButton layoutX="150.0" layoutY="124.0" mnemonicParsing="false" styleClass="radio-info" text="radio-info" toggleGroup="$radio_5" />
+                                    <RadioButton layoutX="300.0" layoutY="124.0" mnemonicParsing="false" styleClass="radio-purple" text="radio-purple" toggleGroup="$radio_6" />
+                                    <RadioButton layoutX="450.0" layoutY="124.0" mnemonicParsing="false" styleClass="radio-pink" text="radio-pink" toggleGroup="$radio_7" />
+                                    <RadioButton layoutX="600.0" layoutY="124.0" mnemonicParsing="false" styleClass="radio-inverse" text="radio-inverse" toggleGroup="$radio_8" />
+                                    <Label layoutY="170.0" text="JFoenix RadioButtons">
+                                       <styleClass>
+                                          <String fx:value="h5" />
+                                          <String fx:value="semibold" />
+                                          <String fx:value="label-secondary" />
+                                       </styleClass>
+                                    </Label>
+                                    <Separator layoutY="200.0" prefWidth="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="5.0" />
+                                    <JFXRadioButton layoutX="4.0" layoutY="210.0" text="Default" AnchorPane.leftAnchor="0.0">
+                                       <toggleGroup>
+                                          <ToggleGroup fx:id="jfx_radio_0" />
+                                       </toggleGroup>
+                                    </JFXRadioButton>
+                                    <JFXRadioButton layoutY="235.0" text="Default" toggleGroup="$jfx_radio_0" />
+                                    <JFXRadioButton layoutY="275.0" styleClass="radio-danger" text="radio-danger">
+                                       <toggleGroup>
+                                          <ToggleGroup fx:id="jfx_radio_5" />
+                                       </toggleGroup>
+                                    </JFXRadioButton>
+                                    <JFXRadioButton layoutY="303.0" styleClass="radio-danger" text="radio-danger" toggleGroup="$jfx_radio_5" />
+                                    <JFXRadioButton layoutY="210.0" styleClass="radio-primary" text="radio-primary" AnchorPane.leftAnchor="135.0">
+                                       <toggleGroup>
+                                          <ToggleGroup fx:id="jfx_radio_1" />
+                                       </toggleGroup>
+                                    </JFXRadioButton>
+                                    <JFXRadioButton layoutX="135.0" layoutY="235.0" styleClass="radio-primary" text="radio-primary" toggleGroup="$jfx_radio_1" AnchorPane.leftAnchor="135.0" />
+                                    <JFXRadioButton layoutX="135.0" layoutY="275.0" styleClass="radio-info" text="radio-info" AnchorPane.leftAnchor="135.0">
+                                       <toggleGroup>
+                                          <ToggleGroup fx:id="jfx_radio_6" />
+                                       </toggleGroup>
+                                    </JFXRadioButton>
+                                    <JFXRadioButton layoutX="135.0" layoutY="303.0" styleClass="radio-info" text="radio-info" toggleGroup="$jfx_radio_6" AnchorPane.leftAnchor="135.0" />
+                                    <JFXRadioButton layoutX="135.0" layoutY="210.0" styleClass="radio-secondary" text="radio-secondary" AnchorPane.leftAnchor="285.0">
+                                       <toggleGroup>
+                                          <ToggleGroup fx:id="jfx_radio_2" />
+                                       </toggleGroup>
+                                    </JFXRadioButton>
+                                    <JFXRadioButton layoutX="285.0" layoutY="235.0" styleClass="radio-secondary" text="radio-secondary" toggleGroup="$jfx_radio_2" AnchorPane.leftAnchor="285.0" />
+                                    <JFXRadioButton layoutX="285.0" layoutY="275.0" styleClass="radio-purple" text="radio-purple" AnchorPane.leftAnchor="285.0">
+                                       <toggleGroup>
+                                          <ToggleGroup fx:id="jfx_radio_7" />
+                                       </toggleGroup>
+                                    </JFXRadioButton>
+                                    <JFXRadioButton layoutX="285.0" layoutY="303.0" styleClass="radio-purple" text="radio-purple" toggleGroup="$jfx_radio_7" AnchorPane.leftAnchor="285.0" />
+                                    <JFXRadioButton layoutX="285.0" layoutY="210.0" styleClass="radio-success" text="radio-success" AnchorPane.leftAnchor="435.0">
+                                       <toggleGroup>
+                                          <ToggleGroup fx:id="jfx_radio_3" />
+                                       </toggleGroup>
+                                    </JFXRadioButton>
+                                    <JFXRadioButton layoutX="435.0" layoutY="235.0" styleClass="radio-success" text="radio-success" toggleGroup="$jfx_radio_3" AnchorPane.leftAnchor="435.0" />
+                                    <JFXRadioButton layoutX="435.0" layoutY="275.0" styleClass="radio-pink" text="radio-pink" AnchorPane.leftAnchor="435.0">
+                                       <toggleGroup>
+                                          <ToggleGroup fx:id="jfx_radio_8" />
+                                       </toggleGroup>
+                                    </JFXRadioButton>
+                                    <JFXRadioButton layoutX="435.0" layoutY="303.0" styleClass="radio-pink" text="radio-pink" toggleGroup="$jfx_radio_8" AnchorPane.leftAnchor="435.0" />
+                                    <JFXRadioButton layoutX="435.0" layoutY="210.0" styleClass="radio-warning" text="radio-warning" AnchorPane.leftAnchor="585.0">
+                                       <toggleGroup>
+                                          <ToggleGroup fx:id="jfx_radio_4" />
+                                       </toggleGroup>
+                                    </JFXRadioButton>
+                                    <JFXRadioButton layoutX="585.0" layoutY="235.0" styleClass="radio-warning" text="radio-warning" toggleGroup="$jfx_radio_4" AnchorPane.leftAnchor="585.0" />
+                                    <JFXRadioButton layoutX="585.0" layoutY="275.0" styleClass="radio-inverse" text="radio-inverse" toggleGroup="$jfx_radio_8" AnchorPane.leftAnchor="585.0" />
+                                    <JFXRadioButton layoutX="585.0" layoutY="303.0" styleClass="radio-inverse" text="radio-inverse" toggleGroup="$jfx_radio_8" AnchorPane.leftAnchor="585.0" />
+                                 </children>
+                              </AnchorPane>
                               <AnchorPane fx:id="comp_pane_labels" layoutX="238.0" layoutY="103.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="20.0">
                                  <children>
                                     <Label text="Headings" AnchorPane.topAnchor="0.0">
                                        <styleClass>
-                                          <String fx:value="h4" />
-                                          <String fx:value="lead" />
+                                          <String fx:value="h5" />
+                                          <String fx:value="semibold" />
+                                          <String fx:value="label-secondary" />
                                        </styleClass>
                                     </Label>
                                     <Separator layoutY="31.0" prefWidth="130.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="30.0" />
@@ -513,8 +641,9 @@
                                     <Label layoutX="657.0" layoutY="45.0" styleClass="h6" text="Heading 6" AnchorPane.leftAnchor="650.0" />
                                     <Label layoutY="108.0" text="Contextual Text Colors" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="108.0">
                                        <styleClass>
-                                          <String fx:value="h4" />
-                                          <String fx:value="lead" />
+                                          <String fx:value="h5" />
+                                          <String fx:value="semibold" />
+                                          <String fx:value="label-secondary" />
                                        </styleClass>
                                     </Label>
                                     <Separator layoutY="138.0" prefWidth="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="138.0" />
@@ -530,8 +659,9 @@
                                     <Label layoutX="560.0" layoutY="173.0" styleClass="label-inverse" text="label-inverse" AnchorPane.leftAnchor="560.0" />
                                     <Label layoutY="227.0" text="Font Variants" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="227.0">
                                        <styleClass>
-                                          <String fx:value="h4" />
-                                          <String fx:value="lead" />
+                                          <String fx:value="h5" />
+                                          <String fx:value="semibold" />
+                                          <String fx:value="label-secondary" />
                                        </styleClass>
                                     </Label>
                                     <Separator layoutY="257.0" prefWidth="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="257.0" />

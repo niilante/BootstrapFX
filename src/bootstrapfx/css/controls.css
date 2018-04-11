@@ -7,15 +7,43 @@
 }
 
 #comp_btn_buttons{
-    -fx-graphic:  url('../img/Buttons_17px.png');
+    -fx-graphic:  url('../img/Button_17px.png');
 }
 
 #comp_btn_toggles{
-    -fx-graphic:  url('../img/Toggle_Button_17px.png');
+    -fx-graphic:  url('../img/Toggle_17px.png');
 }
 
 #comp_btn_radios{
-    -fx-graphic:  url('../img/Radios_17px.png');
+    -fx-graphic:  url('../img/Radio_17px.png');
+}
+
+#comp_btn_checkbxs{
+    -fx-graphic:  url('../img/Check_17px.png');
+}
+
+#comp_btn_choicebxs{
+    -fx-graphic:  url('../img/Choice_17px.png');
+}
+
+#comp_btn_fields{
+    -fx-graphic:  url('../img/Field_17px.png');
+}
+
+#comp_btn_lists{
+    -fx-graphic:  url('../img/List_17px.png');
+}
+
+#comp_btn_tables{
+    -fx-graphic:  url('../img/Table_17px.png');
+}
+
+#comp_btn_trees{
+    -fx-graphic:  url('../img/Tree_17px.png');
+}
+
+#comp_btn_ttables{
+    -fx-graphic:  url('../img/TreeTable_17px.png');
 }
 
 #comp_pane_labels, #comp_pane_buttons, #comp_pane_toggles, #comp_pane_radios{

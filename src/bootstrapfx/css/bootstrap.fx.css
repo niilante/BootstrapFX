@@ -18,11 +18,11 @@
        - Outlined Buttons
        - Contextual Colors
        - Graphic Buttons
-       - Sizes
        - ToggleButton
+       - Sizes
+       - RadioButton
 
 ********************************************************************************
-       - RadioButton
        - CheckBox
        - ChoiceBox
     3. Fields
@@ -234,7 +234,7 @@
     -fx-border-color: #90A4AE;
     -fx-font-family: 'Segoe UI Semibold';
     -fx-cursor: hand;
-    -fx-graphic-text-gap: 15;
+    -fx-graphic-text-gap: 10;
     -fx-text-fill: #455A64;
 }
 
@@ -409,26 +409,6 @@
     -fx-graphic-text-gap: 0;
 }
 
-.btn-xl{
-    -fx-pref-width: 140px;
-}
-
-.btn-lg{
-    -fx-pref-width: 120px;
-}
-
-.btn-md{
-    -fx-pref-width: 100px;
-}
-
-.btn-sm{
-    -fx-pref-width: 80px;
-}
-
-.btn-xs{
-    -fx-pref-width: 60px;
-}
-
 .jfx-toggle-button{
     -jfx-untoggle-color: #fafafa;
     -jfx-untoggle-line-color: #999999;
@@ -502,6 +482,160 @@
 .jfx-toggle-button:pressed{
     -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0), 0,0,0,0);
 }
+
+.btn-xl{
+    -fx-pref-width: 140px;
+}
+
+.btn-lg{
+    -fx-pref-width: 120px;
+}
+
+.btn-md{
+    -fx-pref-width: 100px;
+}
+
+.btn-sm{
+    -fx-pref-width: 80px;
+}
+
+.btn-xs{
+    -fx-pref-width: 60px;
+}
+
+.radio-button{
+    -fx-font-family: 'Segoe UI Semibold';
+    -fx-text-fill: #455A64;
+    -jfx-selected-color: #455A64;
+    -jfx-unselected-color: #455A64;
+}
+
+.radio-button .radio{
+    -fx-background-color: #FFFFFF;
+    -fx-border-color: #455A64;
+    -fx-border-width: 1.5;
+    -fx-border-radius: 8;
+    -fx-pref-height: 15;
+    -fx-pref-width: 15;
+}
+
+.radio-button:selected .radio{
+    -fx-border-color: #455A64;
+}
+
+.radio-button:selected .dot{
+    -fx-background-color: #455A64;
+    -fx-background-insets: 0.1;
+}
+
+.radio-button:selected.radio-primary .radio{
+    -fx-border-color: #3f51b5;
+}
+
+.radio-button:selected.radio-primary .dot{
+    -fx-background-color: #3f51b5;
+}
+
+.radio-button:selected.radio-secondary .radio{
+    -fx-border-color: #6c757d;
+}
+
+.radio-button:selected.radio-secondary .dot{
+    -fx-background-color: #6c757d;
+}
+
+.radio-button:selected.radio-success .radio{
+    -fx-border-color: #4CAF50;
+}
+
+.radio-button:selected.radio-success .dot{
+    -fx-background-color: #4CAF50;
+}
+
+.radio-button:selected.radio-warning .radio{
+    -fx-border-color: #ebc142;
+}
+
+.radio-button:selected.radio-warning .dot{
+    -fx-background-color: #ebc142;
+}
+
+.radio-button:selected.radio-danger .radio{
+    -fx-border-color: #F44336;
+}
+
+.radio-button:selected.radio-danger .dot{
+    -fx-background-color: #F44336;
+}
+
+.radio-button:selected.radio-info .radio{
+    -fx-border-color: #03a9f4;
+}
+
+.radio-button:selected.radio-info .dot{
+    -fx-background-color: #03a9f4;
+}
+
+.radio-button:selected.radio-purple .radio{
+    -fx-border-color: #ad86df;
+}
+
+.radio-button:selected.radio-purple .dot{
+    -fx-background-color: #ad86df;
+}
+
+.radio-button:selected.radio-pink .radio{
+    -fx-border-color: #f13c6e;
+}
+
+.radio-button:selected.radio-pink .dot{
+    -fx-background-color: #f13c6e;
+}
+
+.radio-button:selected.radio-inverse .radio{
+    -fx-border-color: #212121;
+}
+
+.radio-button:selected.radio-inverse .dot{
+    -fx-background-color: #212121;
+}
+
+.radio-button.radio-primary{
+    -jfx-selected-color: #3f51b5;
+}
+
+.radio-button.radio-secondary{
+    -jfx-selected-color: #6c757d;
+}
+
+.radio-button.radio-success{
+    -jfx-selected-color: #4CAF50;
+}
+
+.radio-button.radio-warning{
+    -jfx-selected-color: #ebc142;
+}
+
+.radio-button.radio-danger{
+    -jfx-selected-color: #F44336;
+}
+
+.radio-button.radio-info{
+    -jfx-selected-color: #03a9f4;
+}
+
+.radio-button.radio-purple{
+    -jfx-selected-color: #ad86df;
+}
+
+.radio-button.radio-pink{
+    -jfx-selected-color: #f13c6e;
+}
+
+.radio-button.radio-inverse{
+    -jfx-selected-color: #212121;
+}
+
 
 /*
 
