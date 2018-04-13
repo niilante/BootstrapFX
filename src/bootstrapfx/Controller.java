@@ -3,6 +3,8 @@ package bootstrapfx;
 import com.jfoenix.controls.JFXButton;
 import java.net.URL;
 import java.util.ResourceBundle;
+import javafx.animation.FadeTransition;
+import javafx.animation.PauseTransition;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -10,13 +12,14 @@ import javafx.scene.Group;
 import javafx.scene.control.Button;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
+import javafx.util.Duration;
 
 /**
  * @author BENJAH
  */
 public class Controller implements Initializable {
     @FXML
-    private AnchorPane main_pane;
+    private AnchorPane preloader, main_pane;
     @FXML
     private Button sign_out, min_window, clz_window;
 
@@ -30,7 +33,9 @@ public class Controller implements Initializable {
     public static Stage primaryStage;
     
     @Override
-    public void initialize(URL url, ResourceBundle rb) {}
+    public void initialize(URL url, ResourceBundle rb) {
+        this.preLoader();
+    }
     
     /***** Formatted Code *****/
     @FXML
@@ -50,6 +55,26 @@ public class Controller implements Initializable {
             //shutdown hook here;
             System.exit(0);
         }
+    }
+    
+    public void preLoader() {
+        FadeTransition fade= new FadeTransition(Duration.seconds(1.8));
+        fade.setNode(preloader);
+        fade.setFromValue(1);
+        fade.setToValue(0);
+        fade.setCycleCount(1);        
+        
+        PauseTransition pause= new PauseTransition(Duration.seconds(15));
+        pause.setOnFinished(e-> {
+            preloader.getChildren().forEach(node-> node.setVisible(false));
+            fade.play();
+        });
+        
+        PauseTransition exitloader= new PauseTransition(Duration.seconds(16.9));
+        exitloader.setOnFinished(e-> preloader.toBack());
+        
+        pause.play();
+        exitloader.play();
     }
     
     /***** Reusable Code *****/

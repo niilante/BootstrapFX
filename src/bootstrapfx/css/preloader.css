@@ -1,0 +1,15 @@
+/* 
+    Author     : BENJAH
+*/
+
+#preloader{
+    -fx-background-color: #263238;
+}
+
+#preloader .label{
+    -fx-text-fill: #607D8B;
+}
+
+#preloader .button{
+    -fx-graphic:  url('../img/BootstrapFX_200px.png');
+}

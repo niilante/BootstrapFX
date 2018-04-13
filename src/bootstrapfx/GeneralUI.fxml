@@ -2,6 +2,7 @@
 
 <?import com.jfoenix.controls.JFXButton?>
 <?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXSpinner?>
 <?import com.jfoenix.controls.JFXTabPane?>
 <?import com.jfoenix.controls.JFXToggleButton?>
 <?import java.lang.String?>
@@ -749,6 +750,13 @@
                   <Label layoutX="10.0" layoutY="10.0" text="BootstrapFX® v1.0 Beta" AnchorPane.bottomAnchor="5.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="5.0" />
                </children>
             </AnchorPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="preloader" prefHeight="600.0" prefWidth="950.0" stylesheets="@css/preloader.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="399.0" layoutY="571.0" text="BootstrapFX Version 1.0 Beta" AnchorPane.topAnchor="570.0" />
+            <JFXSpinner layoutX="460.0" layoutY="461.0" prefHeight="30.0" prefWidth="30.0" AnchorPane.topAnchor="450.0" />
+            <Button layoutX="366.0" layoutY="169.0" mnemonicParsing="false" styleClass="btn-graphic" text="Button" AnchorPane.bottomAnchor="220.0" AnchorPane.topAnchor="170.0" />
          </children>
       </AnchorPane>
    </children>
