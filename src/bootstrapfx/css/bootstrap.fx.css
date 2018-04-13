@@ -640,3 +640,87 @@
 /*
 
 */
+
+
+/********************************** Utilites **********************************/
+/***** Borders *****/
+.border-primary{
+    -fx-border-color: #3f51b5;
+}
+
+.border-secondary{
+    -fx-border-color: #6c757d;
+}
+
+.border-success{
+    -fx-border-color: #4CAF50;
+}
+
+.border-warning{
+    -fx-border-color: #ebc142;
+}
+
+.border-danger{
+    -fx-border-color: #F44336;
+}
+
+.border-info{
+    -fx-border-color: #03a9f4;
+}
+
+.border-purple{
+    -fx-border-color: #ad86df;
+}
+
+.border-pink{
+    -fx-border-color: #f13c6e;
+}
+
+.border-inverse{
+    -fx-border-color: #212121;
+}
+
+.border-top{
+    -fx-border-width: 1 0 0 0;
+}
+
+.border-right{
+    -fx-border-width: 0 1 0 0;
+}
+
+.border-bottom{
+    -fx-border-width: 0 0 1 0;
+}
+
+.border-left{
+    -fx-border-width: 0 0 0 1;
+}
+
+.border-0{
+    -fx-border-width: 0;
+}
+
+.border-top-0{
+    -fx-border-width: 0 1 1 1;
+}
+
+.border-right-0{
+    -fx-border-width: 1 0 1 1;
+}
+
+.border-bottom-0{
+    -fx-border-width: 1 1 0 1;
+}
+
+.border-left-0{
+    -fx-border-width: 1 1 1 0;
+}
+
+.border-top-bottom-0{
+    -fx-border-width: 0 1 0 1;
+}
+
+.border-right-left-0{
+    -fx-border-width: 1 0 1 0;
+}
+/*******************/
