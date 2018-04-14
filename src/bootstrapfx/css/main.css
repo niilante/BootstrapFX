@@ -40,6 +40,10 @@
     -fx-background-color: #F44336;
 }
 
+.content_pane{
+    -fx-border-color:  rgba(38, 50, 56, .5);
+}
+
 .jfx-tab-pane .tab-header-background{
     -fx-background-color: transparent;
 }

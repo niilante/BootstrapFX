@@ -29,7 +29,7 @@
                   <Button fx:id="clz_window" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#handleButtonAction" styleClass="btn-graphic" text="Button" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
                </children>
             </AnchorPane>
-            <AnchorPane layoutX="10.0" layoutY="100.0" style="-fx-border-color: #263238;" styleClass="border-top-bottom-0" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="100.0">
+            <AnchorPane layoutX="10.0" layoutY="100.0" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="100.0">
                <children>
                   <JFXTabPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="0.0">
                      <tabs>
@@ -757,6 +757,10 @@
                      </tabs>
                   </JFXTabPane>
                </children>
+               <styleClass>
+                  <String fx:value="content_pane" />
+                  <String fx:value="border-top-bottom-0" />
+               </styleClass>
             </AnchorPane>
             <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="30.0" styleClass="main_pane_footer" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
                <children>
@@ -768,9 +772,9 @@
       </AnchorPane>
       <AnchorPane fx:id="preloader" prefHeight="600.0" prefWidth="950.0" stylesheets="@css/preloader.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
-            <Label layoutX="399.0" layoutY="571.0" text="BootstrapFX Version 1.0 Beta" AnchorPane.topAnchor="570.0" />
-            <JFXSpinner layoutX="460.0" layoutY="461.0" prefHeight="30.0" prefWidth="30.0" AnchorPane.topAnchor="450.0" />
-            <Button layoutX="366.0" layoutY="169.0" mnemonicParsing="false" styleClass="btn-graphic" text="Button" AnchorPane.bottomAnchor="220.0" AnchorPane.topAnchor="170.0" />
+            <Button contentDisplay="BOTTOM" layoutX="228.0" layoutY="217.0" mnemonicParsing="false" prefHeight="200.0" prefWidth="495.0" text="BootstrapFX" AnchorPane.bottomAnchor="204.0" AnchorPane.topAnchor="217.0" />
+            <JFXSpinner layoutX="460.0" layoutY="519.0" prefHeight="30.0" prefWidth="30.0" AnchorPane.topAnchor="519.0" />
+            <Label layoutX="378.0" layoutY="601.0" text="Copyright 2018.  All Rights Reserved." />
          </children>
       </AnchorPane>
    </children>

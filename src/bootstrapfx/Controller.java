@@ -2,6 +2,7 @@ package bootstrapfx;
 
 import com.jfoenix.controls.JFXButton;
 import java.net.URL;
+import java.util.Random;
 import java.util.ResourceBundle;
 import javafx.animation.FadeTransition;
 import javafx.animation.PauseTransition;
@@ -34,7 +35,7 @@ public class Controller implements Initializable {
     
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        this.preLoader();
+        this.playLoader();
     }
     
     /***** Formatted Code *****/
@@ -57,23 +58,25 @@ public class Controller implements Initializable {
         }
     }
     
-    public void preLoader() {
-        FadeTransition fade= new FadeTransition(Duration.seconds(1.8));
-        fade.setNode(preloader);
+    private void playLoader() {
+        double ps= new Random().nextInt(12);
+        double ex= ps+2.1;
+        
+        FadeTransition fade= new FadeTransition(Duration.seconds(2), preloader);
         fade.setFromValue(1);
         fade.setToValue(0);
-        fade.setCycleCount(1);        
+        fade.setCycleCount(1);       
         
-        PauseTransition pause= new PauseTransition(Duration.seconds(15));
-        pause.setOnFinished(e-> {
+        PauseTransition pauseloader= new PauseTransition(Duration.seconds(ps));
+        pauseloader.setOnFinished(e-> {
             preloader.getChildren().forEach(node-> node.setVisible(false));
             fade.play();
         });
         
-        PauseTransition exitloader= new PauseTransition(Duration.seconds(16.9));
+        PauseTransition exitloader= new PauseTransition(Duration.seconds(ex));
         exitloader.setOnFinished(e-> preloader.toBack());
         
-        pause.play();
+        pauseloader.play();
         exitloader.play();
     }
     

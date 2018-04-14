@@ -6,10 +6,19 @@
     -fx-background-color: #263238;
 }
 
-#preloader .label{
+#preloader .label, #preloader .button{
     -fx-text-fill: #607D8B;
 }
 
+#preloader .tittle{
+    -fx-font-size: 40px;
+}
+
 #preloader .button{
-    -fx-graphic:  url('../img/BootstrapFX_200px.png');
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-cursor: default;
+    -fx-font-size: 50px;
+    -fx-graphic:  url('../img/BootstrapFX_100px.png');
+    -fx-graphic-text-gap: 0;
 }

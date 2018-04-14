@@ -24,7 +24,7 @@ public class Main extends Application {
         stage.setScene(new Scene(root));
         stage.initStyle(StageStyle.UNDECORATED);
         stage.getIcons().add(new Image(getClass()
-                .getResourceAsStream("img/BootstrapFX_32px.png")));
+                .getResourceAsStream("img/BootstrapFX_32px.png")));        
         stage.show();
         
         root.setOnMousePressed((p) -> {
