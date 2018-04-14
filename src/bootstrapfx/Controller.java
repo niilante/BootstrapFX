@@ -2,7 +2,6 @@ package bootstrapfx;
 
 import com.jfoenix.controls.JFXButton;
 import java.net.URL;
-import java.util.Random;
 import java.util.ResourceBundle;
 import javafx.animation.FadeTransition;
 import javafx.animation.PauseTransition;
@@ -22,7 +21,7 @@ public class Controller implements Initializable {
     @FXML
     private AnchorPane preloader, main_pane;
     @FXML
-    private Button sign_out, min_window, clz_window;
+    private Button exit, sign_out, min_window, clz_window;
 
     @FXML
     private JFXButton comp_btn_labels, comp_btn_buttons, comp_btn_toggles,
@@ -51,7 +50,7 @@ public class Controller implements Initializable {
     @FXML
     private void handleButtonAction(ActionEvent e) {
         if (e.getSource()==min_window) primaryStage.setIconified(true);
-        else if (e.getSource()==clz_window) {
+        else if (e.getSource()==clz_window || e.getSource()==exit) {
             primaryStage.hide();
             //shutdown hook here;
             System.exit(0);
@@ -59,21 +58,20 @@ public class Controller implements Initializable {
     }
     
     private void playLoader() {
-        double ps= new Random().nextInt(12);
-        double ex= ps+2.1;
-        
         FadeTransition fade= new FadeTransition(Duration.seconds(2), preloader);
         fade.setFromValue(1);
         fade.setToValue(0);
         fade.setCycleCount(1);       
         
-        PauseTransition pauseloader= new PauseTransition(Duration.seconds(ps));
+        PauseTransition pauseloader= new PauseTransition(Duration.seconds(8));
         pauseloader.setOnFinished(e-> {
-            preloader.getChildren().forEach(node-> node.setVisible(false));
+            preloader.getChildren().forEach(node-> {
+                if (!(node instanceof Button)) node.setVisible(false);
+            });
             fade.play();
         });
         
-        PauseTransition exitloader= new PauseTransition(Duration.seconds(ex));
+        PauseTransition exitloader= new PauseTransition(Duration.seconds(10.1));
         exitloader.setOnFinished(e-> preloader.toBack());
         
         pauseloader.play();

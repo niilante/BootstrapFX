@@ -772,9 +772,15 @@
       </AnchorPane>
       <AnchorPane fx:id="preloader" prefHeight="600.0" prefWidth="950.0" stylesheets="@css/preloader.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
-            <Button contentDisplay="BOTTOM" layoutX="228.0" layoutY="217.0" mnemonicParsing="false" prefHeight="200.0" prefWidth="495.0" text="BootstrapFX" AnchorPane.bottomAnchor="204.0" AnchorPane.topAnchor="217.0" />
-            <JFXSpinner layoutX="460.0" layoutY="519.0" prefHeight="30.0" prefWidth="30.0" AnchorPane.topAnchor="519.0" />
-            <Label layoutX="378.0" layoutY="601.0" text="Copyright 2018.  All Rights Reserved." />
+            <Button fx:id="exit" layoutX="298.0" mnemonicParsing="false" onAction="#handleButtonAction" styleClass="btn-graphic" text="Button" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+            <Label contentDisplay="BOTTOM" layoutX="336.0" layoutY="213.0" text="BootstrapFX">
+               <styleClass>
+                  <String fx:value="tittle" />
+                  <String fx:value="semibold" />
+               </styleClass>
+            </Label>
+            <JFXSpinner layoutX="461.0" layoutY="484.0" prefHeight="30.0" prefWidth="30.0" AnchorPane.topAnchor="480.0" />
+            <Label layoutX="379.0" layoutY="571.0" text="Copyright 2018.  All Rights Reserved." />
          </children>
       </AnchorPane>
    </children>

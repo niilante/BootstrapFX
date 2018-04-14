@@ -6,19 +6,33 @@
     -fx-background-color: #263238;
 }
 
-#preloader .label, #preloader .button{
-    -fx-text-fill: #607D8B;
+#exit{
+    -fx-cursor: DEFAULT;
+    -fx-graphic: url('../img/Window_Close_25px.png');
+}
+
+#exit:hover{
+    -fx-background-color: #F44336;
 }
 
 #preloader .tittle{
-    -fx-font-size: 40px;
-}
-
-#preloader .button{
     -fx-background-color: transparent;
     -fx-border-color: transparent;
     -fx-cursor: default;
     -fx-font-size: 50px;
     -fx-graphic:  url('../img/BootstrapFX_100px.png');
     -fx-graphic-text-gap: 0;
+}
+
+#preloader .logo{
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-cursor: default;
+    -fx-font-size: 50px;
+    -fx-graphic:  url('../img/BootstrapFX_100px.png');
+    -fx-graphic-text-gap: 0;
+}
+
+#preloader .label, #preloader .button{
+    -fx-text-fill: #607D8B;
 }
